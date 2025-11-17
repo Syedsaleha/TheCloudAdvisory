@@ -28,7 +28,6 @@ export default function Books() {
         mb-20
         text-black        /* 🔥 TITLE COLOR CHANGED TO BLACK */
       ">
-         <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black">
         Books
       </h2>
 
