@@ -19,7 +19,7 @@ export default function Courses() {
       duration: "8 Weeks",
       price: "₹6,499",
       status: "Live",
-      img: "https://via.placeholder.com/420x260",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
     },
   ];
 
