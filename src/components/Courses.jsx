@@ -5,7 +5,7 @@ export default function Courses() {
       duration: "6 Weeks",
       price: "₹4,999",
       status: "Live",
-      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/193967/1718612700859Course_Thumbnail__1__lyst1718612700913.png?w=805&h=453&resizetype=fill",
     },
     {
       title: "Docker & Kubernetes Bootcamp",
