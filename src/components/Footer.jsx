@@ -31,7 +31,7 @@ export default function Footer() {
 
               {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/in/pravin-mishra-aws-trainer"
                 className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
                            hover:bg-yellow-400 hover:text-black transition-all duration-200"
               >
