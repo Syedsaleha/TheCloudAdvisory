@@ -35,13 +35,25 @@ export default function Navigation() {
                 onClick={() => scrollToSection('services')}
                 className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
               >
-                Services
+                University
               </button>
               <button
                 onClick={() => scrollToSection('about')}
                 className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
               >
-                About
+                Blog
+              </button>
+                 <button
+                onClick={() => scrollToSection('about')}
+                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
+              >
+                Book
+              </button>
+                 <button
+                onClick={() => scrollToSection('about')}
+                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
+              >
+                Courses
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
@@ -76,14 +88,27 @@ export default function Navigation() {
               onClick={() => scrollToSection('services')}
               className="block w-full text-left px-3 py-2 text-gray-300 hover:text-yellow-400 hover:bg-gray-900 rounded-md transition-colors"
             >
-              Services
+              University
             </button>
             <button
               onClick={() => scrollToSection('about')}
               className="block w-full text-left px-3 py-2 text-gray-300 hover:text-yellow-400 hover:bg-gray-900 rounded-md transition-colors"
             >
-              About
+              Blog
             </button>
+              <button
+              onClick={() => scrollToSection('about')}
+              className="block w-full text-left px-3 py-2 text-gray-300 hover:text-yellow-400 hover:bg-gray-900 rounded-md transition-colors"
+            >
+              Book
+            </button>
+              <button
+              onClick={() => scrollToSection('about')}
+              className="block w-full text-left px-3 py-2 text-gray-300 hover:text-yellow-400 hover:bg-gray-900 rounded-md transition-colors"
+            >
+              Courses
+            </button>
+            
             <button
               onClick={() => scrollToSection('contact')}
               className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md font-semibold hover:bg-yellow-500 transition-colors"
