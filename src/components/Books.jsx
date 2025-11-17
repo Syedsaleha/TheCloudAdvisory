@@ -21,15 +21,16 @@ export default function Books() {
 
 
       {/* Section Title */}
-      <h1 className="
-        text-3xl 
-        font-extrabold 
+      <h2 className="
+        text-4xl 
+        font-bold 
         text-center 
         mb-20
         text-black        /* 🔥 TITLE COLOR CHANGED TO BLACK */
       ">
+         <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black">
         Books
-      </h1>
+      </h2>
 
       <div className="max-w-6xl mx-auto space-y-32">
 
