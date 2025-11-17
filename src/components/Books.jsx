@@ -9,7 +9,7 @@ export default function Books() {
           if (entry.isIntersecting) entry.target.classList.add("fade-show");
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.25 }
     );
 
     document.querySelectorAll(".fade-section").forEach((el) => observer.observe(el));
@@ -50,7 +50,6 @@ export default function Books() {
       {/* TITLE */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black mb-20 relative inline-block mx-auto">
         Featured Books
-        {/* Animated underline */}
         <span className="block w-full h-1 bg-gradient-to-r from-yellow-400 to-blue-500 mt-2 animate-[underline_1.5s_ease-in-out_infinite]"></span>
       </h2>
 
@@ -59,7 +58,7 @@ export default function Books() {
           <div
             key={index}
             className={`fade-section grid grid-cols-1 md:grid-cols-2 gap-16 items-center ${
-              index % 2 !== 0 ? "md:flex-row-reverse md:[direction:rtl]" : ""
+              index % 2 !== 0 ? "md:flex-row-reverse" : ""
             }`}
           >
             {/* ==== BOOK IMAGE with 3D tilt ==== */}
@@ -88,7 +87,6 @@ export default function Books() {
                 {book.desc}
               </p>
 
-              {/* SIGNATURE */}
               <p className="italic text-gray-500 mb-2 text-lg">
                 “{book.signature}”
               </p>
@@ -97,9 +95,9 @@ export default function Books() {
                 — {book.author}
               </p>
 
-              {/* ⭐ STAR RATING */}
-              <div className="flex justify-center md:justify-start items-center gap-2 mb-6 text-yellow-500">
-                <span className="text-xl">⭐</span>
+              {/* ⭐ STAR RATING — FIXED ALIGNMENT */}
+              <div className="flex items-center gap-2 mb-6 justify-center md:justify-start direction-ltr">
+                <span className="text-xl text-yellow-500">⭐</span>
                 <span className="text-black font-bold">{book.rating}</span>
                 <span className="text-gray-600 text-sm">({book.reviews} reviews)</span>
               </div>
@@ -145,10 +143,11 @@ export default function Books() {
         `}
       </script>
 
-      {/* Scroll fade CSS */}
+      {/* Scroll Effects + Fixes */}
       <style>{`
         .fade-section { opacity: 0; transform: translateY(40px); transition: 1s ease-out; }
         .fade-show { opacity: 1 !important; transform: translateY(0) !important; }
+        .direction-ltr { direction: ltr !important; }
 
         @keyframes underline {
           0% { width: 0%; }
