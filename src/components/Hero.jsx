@@ -9,7 +9,7 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className=" fade-up relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center pt-16">
+    <section id="home" className="fade-up relative min-h-screen bg-gradient-to-br from-black via-gray-900 to-black flex items-center pt-16">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute top-1/2 -left-40 w-80 h-80 bg-yellow-400/10 rounded-full blur-3xl"></div>
