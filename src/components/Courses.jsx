@@ -21,6 +21,48 @@ export default function Courses() {
       status: "Live",
       img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
     },
+     {
+      title: "AWS Cloud Mastery",
+      duration: "6 Weeks",
+      price: "₹4,999",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/193967/1718612700859Course_Thumbnail__1__lyst1718612700913.png?w=805&h=453&resizetype=fill",
+    },
+    {
+      title: "Docker & Kubernetes Bootcamp",
+      duration: "4 Weeks",
+      price: "₹3,499",
+      status: "Upcoming",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
+    },
+    {
+      title: "DevOps Zero to Hero",
+      duration: "8 Weeks",
+      price: "₹6,499",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
+    },
+     {
+      title: "AWS Cloud Mastery",
+      duration: "6 Weeks",
+      price: "₹4,999",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/193967/1718612700859Course_Thumbnail__1__lyst1718612700913.png?w=805&h=453&resizetype=fill",
+    },
+    {
+      title: "Docker & Kubernetes Bootcamp",
+      duration: "4 Weeks",
+      price: "₹3,499",
+      status: "Upcoming",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
+    },
+    {
+      title: "DevOps Zero to Hero",
+      duration: "8 Weeks",
+      price: "₹6,499",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
+    },
   ];
 
   return (
@@ -39,7 +81,7 @@ export default function Courses() {
           <div
             key={index}
             className="bg-white border border-gray-200 p-6 rounded-2xl shadow-xl animate-fadeInUp
-              hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)]
+              hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(0,0,0,1.15)]
               transition-all duration-500"
           >
             <img
