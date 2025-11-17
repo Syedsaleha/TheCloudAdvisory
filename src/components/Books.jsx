@@ -22,7 +22,7 @@ export default function Books() {
 
       {/* Section Title */}
       <h1 className="
-        text-4xl 
+        text-3xl 
         font-extrabold 
         text-center 
         mb-20
