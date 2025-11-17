@@ -26,7 +26,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className=" fade-up py-24 bg-white">
+    <section id="contact" className="fade-up py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-yellow-400 font-semibold text-sm tracking-wider uppercase">Get In Touch</span>
