@@ -97,65 +97,39 @@ export default function Navigation() {
       </div>
 
       {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="fade-up md:hidden bg-black border-t border-gray-800">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+    {isOpen && (
+  <div className="md:hidden bg-black border-t border-gray-800">
+    <div className="px-2 pt-2 pb-3 space-y-1">
 
-            {/* Home */}
-            <button
-              onClick={() => scrollToSection('home')}
-              className="mobile-item"
-            >
-              Home
-            </button>
+      <button onClick={() => scrollToSection('home')} className="mobile-item">
+        Home
+      </button>
 
-            {/* University - external */}
-            <a
-              href="https://university.pravinmishra.in/learn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mobile-item"
-            >
-              University
-            </a>
+      <a href="https://university.pravinmishra.in/learn" target="_blank"
+         rel="noopener noreferrer" className="mobile-item">
+        University
+      </a>
 
-            {/* Blog - external */}
-            <a
-              href="https://pravinmishra.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mobile-item"
-            >
-              Blog
-            </a>
+      <a href="https://pravinmishra.in/" target="_blank"
+         rel="noopener noreferrer" className="mobile-item">
+        Blog
+      </a>
 
-            {/* Book */}
-            <button
-              onClick={() => scrollToSection('book')}
-              className="mobile-item"
-            >
-              Book
-            </button>
+      <button onClick={() => scrollToSection('book')} className="mobile-item">
+        Book
+      </button>
 
-            {/* Courses */}
-            <button
-              onClick={() => scrollToSection('courses')}
-              className="mobile-item"
-            >
-              Courses
-            </button>
+      <button onClick={() => scrollToSection('courses')} className="mobile-item">
+        Courses
+      </button>
 
-            {/* Contact */}
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md font-semibold hover:bg-yellow-500 transition-colors"
-            >
-              Contact
-            </button>
+      <button
+        onClick={() => scrollToSection('contact')}
+        className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md font-semibold hover:bg-yellow-500 transition-colors"
+      >
+        Contact
+      </button>
 
-          </div>
-        </div>
-      )}
-    </nav>
-  );
-}
+    </div>
+  </div>
+)}
