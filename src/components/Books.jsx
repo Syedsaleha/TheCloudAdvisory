@@ -1,7 +1,7 @@
 export default function Books() {
   const books = [
     {
-      title: "Cloud Computing Simplified",
+      title: "Ultimate Git and GitHub for Modern Software Development: Unlock the Power of Git and GitHub Version Control and Collaborative Coding to Seamlessly ... Software Projects",
       desc: "This book simplifies cloud computing using diagrams and real-world examples across AWS, Azure and GCP.",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
@@ -9,7 +9,7 @@ export default function Books() {
     },
     {
       title: "DevOps Roadmap 2025",
-      desc: "A complete DevOps guide covering CI/CD, Docker, Kubernetes, GitOps, Terraform, monitoring and real workflows.",
+      desc: "Cloud Computing with AWS: Everything You Need to Know to be an AWS Cloud Practitioner.",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg", // FIXED URL
       btn: "Get Your Copy",
