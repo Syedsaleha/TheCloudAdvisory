@@ -17,7 +17,8 @@ export default function Books() {
   ];
 
   return (
-    <section id="book" className="py-24 bg-white text-[#0a0f1f] px-6">
+   <section id="book" className="pt-10 pb-24 bg-white text-[#0a0f1f] px-6">
+
 
       {/* Section Title */}
       <h2 className="
