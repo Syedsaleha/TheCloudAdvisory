@@ -50,7 +50,7 @@ export default function Books() {
                   overflow-hidden 
                   w-[320px]     /* 👌 Slightly smaller for perfect fit */
                   md:w-[340px]
-                  shadow-[0px_20px_40px_rgba(0,0,0,0.25)]
+                  shadow-[0px_20px_40px_rgba(0,0,0,2.25)]
                   hover:shadow-[0px_25px_50px_rgba(0,0,0,0.35)]
                   transition-all duration-500
                 "
