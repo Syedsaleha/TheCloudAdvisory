@@ -3,6 +3,7 @@ export default function Books() {
     {
       title: "Ultimate Git and GitHub for Modern Software Development",
       desc: "Unlock the Power of Git and GitHub Version Control and Collaborative Coding to Seamlessly ... Software Projects.",
+      signature: "P.Mishra",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
       btn: "Get Your Copy",
@@ -11,6 +12,7 @@ export default function Books() {
     {
       title: "Cloud Computing with AWS",
       desc: "Everything You Need to Know to be an AWS Cloud Practitioner",
+       signature: "P.Mishra",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
       btn: "Get Your Copy",
