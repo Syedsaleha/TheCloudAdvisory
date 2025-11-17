@@ -24,9 +24,13 @@ export default function Courses() {
   ];
 
   return (
-    <section id="courses" className="py-24 bg-gradient-to-b from-[#0d1224] to-[#0a0f1f] text-white px-6">
+    <section
+      id="courses"
+      className="py-24 px-6 bg-white text-[#0a0f1f]"   // <-- WHITE BACKGROUND HERE
+    >
       <h2 className="text-4xl font-extrabold text-center mb-16
-        bg-gradient-to-r from-yellow-400 to-blue-400 text-transparent bg-clip-text animate-fadeIn">
+        bg-gradient-to-r from-yellow-500 via-yellow-300 to-blue-500 
+        text-transparent bg-clip-text animate-fadeIn">
         Courses
       </h2>
 
@@ -34,22 +38,22 @@ export default function Courses() {
         {courses.map((c, index) => (
           <div
             key={index}
-            className="bg-[#0e152b] border border-[#1c2340] p-6 rounded-2xl shadow-xl animate-fadeInUp
-              hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(79,123,255,0.3)]
+            className="bg-white border border-gray-200 p-6 rounded-2xl shadow-xl animate-fadeInUp
+              hover:scale-[1.03] hover:shadow-[0_0_25px_rgba(0,0,0,0.15)]
               transition-all duration-500"
           >
             <img
               src={c.img}
-              className="rounded-lg mb-4 w-full border border-[#1e253d]"
+              className="rounded-lg mb-4 w-full border border-gray-300"
             />
 
-            <h3 className="text-2xl font-semibold">{c.title}</h3>
+            <h3 className="text-2xl font-semibold text-[#0a0f1f]">{c.title}</h3>
 
-            <p className="text-gray-400 mt-2">Duration: {c.duration}</p>
-            <p className="text-yellow-300 font-bold mt-1">{c.price}</p>
+            <p className="text-gray-600 mt-2">Duration: {c.duration}</p>
+            <p className="text-yellow-500 font-bold mt-1">{c.price}</p>
 
             <span
-              className={`inline-block mt-3 px-3 py-1 rounded-full text-sm ${
+              className={`inline-block mt-3 px-3 py-1 rounded-full text-sm text-white ${
                 c.status === "Live"
                   ? "bg-green-600"
                   : c.status === "Upcoming"
