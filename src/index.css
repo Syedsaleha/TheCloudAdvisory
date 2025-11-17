@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-btn {
-  @apply text-gray-300 hover:text-yellow-400 transition font-medium;
-}
-
-.mobile-btn {
-  @apply block text-left w-full text-gray-300 hover:text-yellow-400 py-2;
-}
