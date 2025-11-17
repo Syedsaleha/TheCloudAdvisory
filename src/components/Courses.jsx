@@ -51,7 +51,7 @@ export default function Courses() {
   ];
 
   return (
-    <section id="courses" className="py-24 px-6 bg-white text-[#0a0f1f]">
+    <section id="courses" className=" fade-up py-24 px-6 bg-white text-[#0a0f1f]">
 
       {/* Section Title */}
       <h2 className="text-4xl font-bold text-center mb-20 md:text-5xl text-black animate-fadeIn">
