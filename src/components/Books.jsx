@@ -3,7 +3,7 @@ export default function Books() {
     {
       title: "Cloud Computing Simplified",
       desc: "A complete beginner-to-advanced guide to AWS, Azure, and GCP with real-world architecture and hands-on examples.",
-      img: "C:\Users\SYED\Desktop\TheCloudAdvisory\book1.jpg",
+      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
     },
     {
       title: "DevOps Roadmap 2025",
