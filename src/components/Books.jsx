@@ -21,7 +21,7 @@ export default function Books() {
 
 
       {/* Section Title */}
-      <h2 className="
+      <h1 className="
         text-4xl 
         font-extrabold 
         text-center 
@@ -29,7 +29,7 @@ export default function Books() {
         text-black        /* 🔥 TITLE COLOR CHANGED TO BLACK */
       ">
         Books
-      </h2>
+      </h1>
 
       <div className="max-w-6xl mx-auto space-y-32">
 
