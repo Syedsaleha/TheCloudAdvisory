@@ -39,7 +39,7 @@ export default function Navigation() {
 </a>
 
               <a
-  href="https://your-blog-link.com"
+  href="https://pravinmishra.in/"
   target="_blank"
   rel="noopener noreferrer"
   className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
@@ -48,7 +48,7 @@ export default function Navigation() {
 </a>
 
              
-              <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">Blog</button>
+             
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">Book</button>
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">Courses</button>
 
