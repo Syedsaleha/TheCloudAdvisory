@@ -54,7 +54,7 @@ export default function Courses() {
     <section id="courses" className="py-24 px-6 bg-white text-[#0a0f1f]">
 
       {/* Section Title */}
-      <h2 className="text-4xl font-extrabold text-center mb-16 text-black animate-fadeIn">
+      <h2 className="text-4xl font-bold text-center mb-20 text-black animate-fadeIn">
         Courses
       </h2>
 
