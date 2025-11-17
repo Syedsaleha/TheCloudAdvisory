@@ -3,12 +3,12 @@ export default function Books() {
     {
       title: "Cloud Computing Simplified",
       desc: "Master AWS, Azure, and GCP with real-world cloud architecture explained visually.",
-      img: "https://via.placeholder.com/420x260",
+      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
     },
     {
       title: "DevOps Roadmap 2025",
       desc: "Learn CI/CD, Docker, Kubernetes, Terraform, GitOps and real DevOps workflows.",
-      img: "https://via.placeholder.com/420x260",
+      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
     },
   ];
 
