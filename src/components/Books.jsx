@@ -11,34 +11,28 @@ export default function Books() {
       title: "DevOps Roadmap 2025",
       desc: "A complete DevOps guide covering CI/CD, Docker, Kubernetes, GitOps, Terraform, monitoring and real workflows.",
       author: "Pravin Mishra",
-      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg/260x360",
+      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg", // FIXED URL
       btn: "Get Your Copy",
     },
   ];
 
   return (
     <section id="book" className="py-24 bg-white text-[#0a0f1f] px-6">
-      
+
       {/* Section Title */}
       <h2 className="
         text-4xl 
         font-extrabold 
         text-center 
         mb-20
-        bg-gradient-to-r 
-        from-yellow-500 
-        via-yellow-300 
-        to-blue-600 
-        text-transparent 
-        bg-clip-text
-        animate-fadeIn
+        text-black        /* 🔥 TITLE COLOR CHANGED TO BLACK */
       ">
         Books
       </h2>
 
       <div className="max-w-6xl mx-auto space-y-32">
+
         {books.map((book, index) => (
-          
           <div
             key={index}
             className={`
@@ -50,28 +44,29 @@ export default function Books() {
 
             {/* BOOK IMAGE */}
             <div className="flex justify-center">
-              <div className="
-                rounded-xl 
-                overflow-hidden 
-                w-[230px] 
-                md:w-[260px]
-                shadow-[0px_20px_50px_rgba(0,0,0,0.30)]
-                hover:shadow-[0px_25px_60px_rgba(0,0,0,0.40)]
-                transition-all 
-                duration-500
-              ">
+              <div
+                className="
+                  rounded-xl 
+                  overflow-hidden 
+                  w-[220px]     /* 👌 Slightly smaller for perfect fit */
+                  md:w-[250px]
+                  shadow-[0px_20px_40px_rgba(0,0,0,0.25)]
+                  hover:shadow-[0px_25px_50px_rgba(0,0,0,0.35)]
+                  transition-all duration-500
+                "
+              >
                 <img 
-                  src={book.img} 
+                  src={book.img}
                   alt={book.title}
-                  className="w-full h-auto block"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
 
-            {/* BOOK DESCRIPTION */}
+            {/* BOOK DETAILS */}
             <div className="md:text-left text-center">
-              
-              <h3 className="text-4xl font-bold mb-4 text-[#1a1a2e]">
+
+              <h3 className="text-4xl font-bold mb-4 text-black">
                 {book.title}
               </h3>
 
@@ -101,8 +96,8 @@ export default function Books() {
             </div>
           </div>
         ))}
-      </div>
 
+      </div>
     </section>
   );
 }
