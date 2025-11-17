@@ -49,7 +49,7 @@ export default function Books() {
                   rounded-xl 
                   overflow-hidden 
                   w-[300px]     /* 👌 Slightly smaller for perfect fit */
-                  md:w-[250px]
+                  md:w-[300px]
                   shadow-[0px_20px_40px_rgba(0,0,0,0.25)]
                   hover:shadow-[0px_25px_50px_rgba(0,0,0,0.35)]
                   transition-all duration-500
