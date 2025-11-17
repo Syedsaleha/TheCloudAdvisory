@@ -9,20 +9,20 @@ export default function Courses() {
       link: "https://www.udemy.com/course/mastering-aws-devops-for-cloud-engineers/?couponCode=PMNVD2025",
     },
     {
-      title: "Docker & Kubernetes Bootcamp",
-      duration: "4 Weeks",
-      price: "₹3,499",
+      title: "Linux for DevOps, Cloud, and SRE Engineers",
+      duration: "5 hours",
+      price: "₹629",
       status: "Upcoming",
       img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/docker-kubernetes-bootcamp/?couponCode=YOUR_COUPON",
+      link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=PMNVD2025",
     },
     {
-      title: "DevOps Zero to Hero",
-      duration: "8 Weeks",
-      price: "₹6,499",
+      title: "DevOps for beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
+      duration: "43.5 hours",
+      price: "₹569",
       status: "Live",
       img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/devops-zero-to-hero/?couponCode=YOUR_COUPON",
+      link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
     },
   ];
 
