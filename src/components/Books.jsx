@@ -1,15 +1,15 @@
 export default function Books() {
   const books = [
     {
-      title: "Ultimate Git and GitHub for Modern Software Development.",
-      desc: "This book simplifies cloud computing using diagrams and real-world examples across AWS, Azure and GCP.",
+      title: "Ultimate Git and GitHub for Modern Software Development",
+      desc: "Unlock the Power of Git and GitHub Version Control and Collaborative Coding to Seamlessly ... Software Projects.",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
       btn: "Get Your Copy",
     },
     {
-      title: "DevOps Roadmap 2025",
-      desc: "Cloud Computing with AWS: Everything You Need to Know to be an AWS Cloud Practitioner.",
+      title: "Cloud Computing with AWS",
+      desc: "Everything You Need to Know to be an AWS Cloud Practitioner.",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg", // FIXED URL
       btn: "Get Your Copy",
