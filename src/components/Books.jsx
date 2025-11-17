@@ -10,7 +10,7 @@ export default function Books() {
     },
     {
       title: "Cloud Computing with AWS",
-      desc: "Everything You Need to Know to be an AWS Cloud Practitioner.",
+      desc: "Everything You Need to Know to be an AWS Cloud Practitioner",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
       btn: "Get Your Copy",
@@ -54,8 +54,8 @@ export default function Books() {
                   overflow-hidden 
                   w-[320px]
                   md:w-[340px]
-                  shadow-[0px_20px_40px_rgba(0,0,0,0.25)]
-                  hover:shadow-[0px_25px_50px_rgba(0,0,0,0.35)]
+                  shadow-[0px_20px_40px_rgba(0,0,0,0.35)]
+                  hover:shadow-[0px_25px_50px_rgba(0,0,0,0.45)]
                   transition-all duration-500
                 "
               >
