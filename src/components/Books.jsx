@@ -6,7 +6,7 @@ export default function Books() {
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
       btn: "Get Your Copy",
-      link: "https://www.amazon.in/dp/1484291719",  // ✅ Book 1 Amazon Link
+      link: "https://www.amazon.in/Ultimate-GitHub-Modern-Software-Development/dp/8197223831",  // ✅ Book 1 Amazon Link
     },
     {
       title: "Cloud Computing with AWS",
