@@ -48,7 +48,7 @@ export default function Books() {
                 className="
                   rounded-xl 
                   overflow-hidden 
-                  w-[220px]     /* 👌 Slightly smaller for perfect fit */
+                  w-[300px]     /* 👌 Slightly smaller for perfect fit */
                   md:w-[250px]
                   shadow-[0px_20px_40px_rgba(0,0,0,0.25)]
                   hover:shadow-[0px_25px_50px_rgba(0,0,0,0.35)]
