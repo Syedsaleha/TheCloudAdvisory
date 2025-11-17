@@ -22,8 +22,8 @@ export default function Books() {
       signature: "P. Mishra",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
-      rating: "4.3",
-      reviews: "21",
+      rating: "4.9",
+      reviews: "14",
       link: "https://www.amazon.in/dp/8197223831",
     },
     {
@@ -32,8 +32,8 @@ export default function Books() {
       signature: "P. Mishra",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
-      rating: "4.9",
-      reviews: "14",
+      rating: "4.3",
+      reviews: "21",
       link: "https://www.amazon.in/dp/1484291719",
     },
   ];
