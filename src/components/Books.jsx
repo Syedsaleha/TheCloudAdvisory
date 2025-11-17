@@ -39,10 +39,7 @@ export default function Books() {
 
   return (
     <section
-      id="book"
-    className="relative pt-12 pb-20 px-6 bg-white text-[#0a0f1f] scroll-mt-24 fade-section"
-
-    >
+      id="book" className="relative pt-12 pb-20 px-6 bg-white text-[#0a0f1f] scroll-mt-24 fade-section">
       {/* FLOATING GLOW EFFECT */}
       <div className="absolute -top-10 -left-10 w-60 h-60 bg-yellow-300 blur-3xl opacity-20 rounded-full"></div>
       <div className="absolute top-10 right-10 w-72 h-72 bg-blue-400 blur-3xl opacity-20 rounded-full"></div>
