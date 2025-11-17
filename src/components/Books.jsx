@@ -11,7 +11,7 @@ export default function Books() {
       title: "DevOps Roadmap 2025",
       desc: "A complete DevOps guide covering CI/CD, Docker, Kubernetes, GitOps, Terraform, monitoring and real workflows.",
       author: "Pravin Mishra",
-      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
+      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg/260x360",
       btn: "Get Your Copy",
     },
   ];
