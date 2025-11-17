@@ -4,7 +4,7 @@ export default function Books() {
       title: "Cloud Computing Simplified",
       desc: "This book simplifies Cloud Computing using real-world examples, diagrams, and beginner-friendly explanations across AWS, Azure, and GCP.",
       author: "Pravin Mishra",
-      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg/280x380",
+      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
       btn: "Get Your Copy",
     },
     {
