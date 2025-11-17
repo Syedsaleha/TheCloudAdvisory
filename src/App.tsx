@@ -4,6 +4,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
+import Books from "./components/Books";
+import Courses from "./components/Courses";
 
 function App() {
   return (
