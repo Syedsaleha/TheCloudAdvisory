@@ -29,6 +29,9 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               <button onClick={() => scrollToSection('home')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">Home</button>
+               <a href="https://your-university-link.com" target="_blank" className="nav-btn">
+              University
+            </a>
               <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">University</button>
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">Blog</button>
               <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium">Book</button>
