@@ -2,7 +2,8 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 export default function Contact() {
   return (
-   <section id="contact" className="fade-up py-24 bg-white scroll-mt-24">
+   <section id="contact" className="fade-up py-12 bg-white scroll-mt-20">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* SECTION HEADER */}
