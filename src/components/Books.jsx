@@ -25,6 +25,7 @@ export default function Books() {
         text-4xl 
         font-bold 
         text-center 
+        md:text-5xl
         mb-20
         text-black        /* 🔥 TITLE COLOR CHANGED TO BLACK */
       ">
