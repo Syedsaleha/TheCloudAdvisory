@@ -11,9 +11,10 @@ export default function Footer() {
             <div className="flex items-center">
               <Cloud size={32} className="text-yellow-400" />
               <span className="text-2xl font-bold">
-                <span className="text-white">TheCloud
+                <span className="text-white">
+                  TheCloud
                 <span className="text-yellow-400"> Advisory</span>
-              </span>
+                </span>
               </span>
             </div>
               
