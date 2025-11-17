@@ -53,7 +53,7 @@ export default function Hero() {
 
             <div className="flex items-center space-x-8 pt-8">
               <div className="border-l-2 border-yellow-400 pl-4">
-                <div className="text-3xl font-bold text-white">500+</div>
+                <div className="text-3xl font-bold text-white">5000+</div>
                 <div className="text-gray-400 text-sm">Students Trained</div>
               </div>
               <div className="border-l-2 border-blue-500 pl-4">
@@ -61,7 +61,7 @@ export default function Hero() {
                 <div className="text-gray-400 text-sm">Projects Delivered</div>
               </div>
               <div className="border-l-2 border-yellow-400 pl-4">
-                <div className="text-3xl font-bold text-white">10+</div>
+                <div className="text-3xl font-bold text-white">15+</div>
                 <div className="text-gray-400 text-sm">Years Experience</div>
               </div>
             </div>
