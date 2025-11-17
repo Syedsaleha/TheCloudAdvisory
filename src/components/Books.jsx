@@ -21,7 +21,7 @@ export default function Books() {
   ];
 
   return (
-    <section id="book" className="fade-up pt-6 pb-20 bg-white text-[#0a0f1f] px-6">
+  <section id="book" className="fade-up pt-6 pb-20 bg-white text-[#0a0f1f] px-6 scroll-mt-32">
 
       {/* Section Title */}
       <h2
