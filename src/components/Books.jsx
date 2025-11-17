@@ -2,76 +2,65 @@ export default function Books() {
   const books = [
     {
       title: "Ultimate Git and GitHub for Modern Software Development",
-      desc: "Unlock the Power of Git and GitHub Version Control and Collaborative Coding to Seamlessly ... Software Projects.",
-      signature: "P.Mishra",
+      desc: "Master Git, GitHub workflows, version control, and collaboration techniques used in real-world software engineering.",
+      signature: "P. Mishra",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
-      btn: "Get Your Copy",
-      link: "https://www.amazon.in/dp/8197223831",  // ✅ Book 1 Amazon Link
+      link: "https://www.amazon.in/dp/8197223831",
     },
     {
       title: "Cloud Computing with AWS",
-      desc: "Everything You Need to Know to be an AWS Cloud Practitioner",
-       signature: "P.Mishra",
+      desc: "A complete beginner-friendly guide to understanding Cloud fundamentals and AWS Cloud Practitioner concepts.",
+      signature: "P. Mishra",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
-      btn: "Get Your Copy",
-      link: "https://www.amazon.in/dp/1484291719",  // ✅ Book 2 Amazon Link
+      link: "https://www.amazon.in/dp/1484291719",
     },
   ];
 
   return (
-  <section id="book" className="fade-up pt-6 pb-20 bg-white text-[#0a0f1f] px-6 scroll-mt-32">
-
-      {/* Section Title */}
-      <h2
-        className="
-        text-4xl 
-        font-bold 
-        text-center 
-        md:text-5xl
-        mb-20
-        text-black
-      "
-      >
-        Books
+    <section
+      id="book"
+      className="py-24 px-6 bg-white text-[#0a0f1f] scroll-mt-32 fade-up"
+    >
+      {/* SECTION TITLE */}
+      <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-20 text-black">
+        Featured Books
       </h2>
 
-      <div className="max-w-6xl mx-auto space-y-32">
+      <div className="max-w-7xl mx-auto space-y-28">
         {books.map((book, index) => (
           <div
             key={index}
-            className={`
-              grid grid-cols-1 md:grid-cols-2 gap-16 items-center
-              animate-fadeInUp
-              ${index % 2 !== 0 ? "md:flex-row-reverse md:[direction:rtl]" : ""}
-            `}
+            className={`grid grid-cols-1 md:grid-cols-2 gap-16 items-center ${
+              index % 2 !== 0 ? "md:flex-row-reverse md:[direction:rtl]" : ""
+            }`}
           >
-
-            {/* BOOK IMAGE */}
+            {/* ==== BOOK IMAGE BOX ==== */}
             <div className="flex justify-center">
               <div
                 className="
-                  rounded-xl 
-                  overflow-hidden 
-                  w-[320px]
+                  bg-white 
+                  rounded-2xl 
+                  shadow-[0_10px_40px_rgba(0,0,0,0.15)]
+                  hover:shadow-[0_15px_60px_rgba(0,0,0,0.25)]
+                  transition-all duration-500 
+                  p-4
+                  w-[280px]
                   md:w-[340px]
-                  shadow-[0px_20px_40px_rgba(0,0,0,0.5)]
-                  hover:shadow-[0px_25px_50px_rgba(0,0,0,0.35)]
-                  transition-all duration-500
                 "
               >
                 <img
                   src={book.img}
                   alt={book.title}
-                  className="w-full h-auto object-contain"
+                  className="rounded-xl w-full object-cover"
                 />
               </div>
             </div>
 
-            {/* BOOK DETAILS */}
+            {/* ==== BOOK DETAILS ==== */}
             <div className="md:text-left text-center">
-              <h3 className="text-4xl font-bold mb-4 text-black">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 text-black leading-snug">
                 {book.title}
               </h3>
 
@@ -79,36 +68,39 @@ export default function Books() {
                 {book.desc}
               </p>
 
-               <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                {book.signature}
+              <p className="italic text-gray-500 mb-2 text-lg">
+                “{book.signature}”
               </p>
 
-              <p className="font-semibold text-gray-800 mb-8">
-                {book.author}
+              <p className="font-semibold text-gray-800 mb-8 text-xl">
+                — {book.author}
               </p>
 
-              {/* ENROLL BUTTON AS LINK */}
+              {/* BUTTON */}
               <a
                 href={book.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="
-                  bg-yellow-400 
-                  hover:bg-yellow-500 
+                  inline-block
+                  px-10 
+                  py-3 
+                  rounded-xl 
+                  bg-gradient-to-r 
+                  from-yellow-400 
+                  to-yellow-500
                   text-black 
                   font-semibold 
-                  px-8 
-                  py-3 
-                  rounded-lg 
-                  transition 
-                  duration-300 
                   shadow-md
-                  inline-block
+                  hover:shadow-xl
+                  hover:from-yellow-500 
+                  hover:to-yellow-600
+                  transition-all 
+                  duration-300
                 "
               >
-                {book.btn} →
+                Get Your Copy →
               </a>
-
             </div>
           </div>
         ))}
