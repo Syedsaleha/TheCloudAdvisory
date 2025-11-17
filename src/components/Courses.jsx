@@ -5,7 +5,7 @@ export default function Courses() {
       duration: "6 Weeks",
       price: "₹4,999",
       status: "Live",
-      img: "https://via.placeholder.com/420x260",
+      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
     },
     {
       title: "Docker & Kubernetes Bootcamp",
