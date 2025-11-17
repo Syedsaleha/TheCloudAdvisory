@@ -12,7 +12,7 @@ export default function Courses() {
       duration: "4 Weeks",
       price: "₹3,499",
       status: "Upcoming",
-      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
     },
     {
       title: "DevOps Zero to Hero",
