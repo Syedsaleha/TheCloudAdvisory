@@ -14,8 +14,9 @@ export default function Footer() {
                 <span className="text-white">TheCloud
                 <span className="text-yellow-400"> Advisory</span>
               </span>
+              </span>
             </div>
-            
+              
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
               Empowering individuals and organizations with cutting-edge Cloud and DevOps expertise through courses, books, and consulting.
             </p>
