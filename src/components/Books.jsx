@@ -1,7 +1,7 @@
 export default function Books() {
   const books = [
     {
-      title: "Ultimate Git and GitHub for Modern Software Development: Unlock the Power of Git and GitHub Version Control and Collaborative Coding to Seamlessly ... Software Projects",
+      title: "Ultimate Git and GitHub for Modern Software Development.",
       desc: "This book simplifies cloud computing using diagrams and real-world examples across AWS, Azure and GCP.",
       author: "Pravin Mishra",
       img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
