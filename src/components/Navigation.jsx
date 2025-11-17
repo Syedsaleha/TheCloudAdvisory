@@ -20,7 +20,7 @@ export default function Navigation() {
             <span className="text-2xl font-bold">
               <span className="text-white">TheCloud</span>
                 <span className="text-yellow-400">Advisory</span>
-            </span>
+                  </span>
           </div>
 
           <div className="hidden md:block">
