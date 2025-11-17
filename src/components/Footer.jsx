@@ -15,7 +15,7 @@ export default function Footer() {
               <Cloud size={32} className="text-yellow-400" />
 
               {/* FIXED BRAND NAME */}
-              <h2 className="text-2xl font-bold flex items-center space-x-1">
+              <h2 className="text-2xl font-bold flex items-center">
                 <span className="text-white">TheCloud</span>
                 <span className="text-yellow-400">Advisory</span>
               </h2>
