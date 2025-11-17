@@ -13,6 +13,8 @@ function App() {
       <Navigation />
       <Hero />
       <Services />
+      <Books />
+      <Courses />
       <About />
       <Contact />
       <Footer />
