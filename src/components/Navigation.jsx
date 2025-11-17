@@ -98,7 +98,7 @@ export default function Navigation() {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-black border-t border-gray-800">
+        <div className="fade-up md:hidden bg-black border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1">
 
             {/* Home */}
