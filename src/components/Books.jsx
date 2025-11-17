@@ -41,14 +41,18 @@ export default function Books() {
   return (
     <section
       id="book"
-      className="relative py-28 px-6 bg-white text-[#0a0f1f] scroll-mt-32 fade-section"
+      className={`fade-section grid grid-cols-1 md:grid-cols-2 gap-16 items-center ${
+  index % 2 !== 0 ? "md:[&>*:first-child]:order-2 md:[&>*:last-child]:order-1" : ""
+}`}
+
     >
       {/* FLOATING GLOWING SHAPES */}
       <div className="absolute -top-10 -left-10 w-60 h-60 bg-yellow-300 blur-3xl opacity-20 rounded-full"></div>
       <div className="absolute top-10 right-10 w-72 h-72 bg-blue-400 blur-3xl opacity-20 rounded-full"></div>
 
       {/* TITLE */}
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black mb-20 relative inline-block mx-auto">
+    <h2 className="text-4xl md:text-5xl font-extrabold text-center text-black mb-20 mx-auto w-fit relative">
+
         Featured Books
         <span className="block w-full h-1 bg-gradient-to-r from-yellow-400 to-blue-500 mt-2 animate-[underline_1.5s_ease-in-out_infinite]"></span>
       </h2>
