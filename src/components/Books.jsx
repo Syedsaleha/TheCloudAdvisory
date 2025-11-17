@@ -79,6 +79,10 @@ export default function Books() {
                 {book.desc}
               </p>
 
+               <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                {book.signature}
+              </p>
+
               <p className="font-semibold text-gray-800 mb-8">
                 {book.author}
               </p>
