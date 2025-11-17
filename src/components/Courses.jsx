@@ -12,7 +12,7 @@ export default function Courses() {
       duration: "4 Weeks",
       price: "₹3,499",
       status: "Upcoming",
-      img: "https://via.placeholder.com/420x260",
+      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
     },
     {
       title: "DevOps Zero to Hero",
