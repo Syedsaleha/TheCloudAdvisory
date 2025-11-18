@@ -38,14 +38,14 @@ const books = [
 
   // ⭐ NEW BOOK ADDED HERE ⭐
   {
-    title: "Mastering DevOps: CI/CD, Containers & Cloud Automation",
-    desc: "A complete practical guide for DevOps beginners — covering CI/CD, Docker, Kubernetes, GitHub Actions, and AWS automation.",
+    title: "Mastering DevOps",
+    desc: "Your Path to Success: A Practical Guide to Building, Deploying, and Scaling Applications with AWS DevOps.",
     signature: "P. Mishra",
     author: "Pravin Mishra",
-    img: "https://m.media-amazon.com/images/I/71tIrpTgHfL.jpg", // change if needed
-    rating: "4.8",
-    reviews: "32",
-    link: "https://www.amazon.in", // add correct link
+    img: "https://m.media-amazon.com/images/I/71Q43c34UzL._SY466_.jpg", // change if needed
+    rating: "5",
+    reviews: "1",
+    link: "https://www.amazon.in/dp/9356484880", // add correct link
   },
 ];
 
