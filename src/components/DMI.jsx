@@ -1,18 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  Navigation as SwiperNavigation,
-  Pagination,
-  Autoplay,
-} from "swiper/modules";
-
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-import Navigation from "./Navigation"; // your navbar
-import Footer from "./Footer";
-import { useEffect } from "react";
-
 
 
 export default function DMI() {
