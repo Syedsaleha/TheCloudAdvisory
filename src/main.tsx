@@ -7,8 +7,11 @@ import "./index.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Initialize AOS
-AOS.init();
+AOS.init({
+  duration: 600,
+  once: true,
+  easing: "ease-out",
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
