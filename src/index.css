@@ -4,13 +4,3 @@
 .mobile-item {
   @apply block w-full text-left px-3 py-2 text-gray-300 hover:text-yellow-400 hover:bg-gray-900 rounded-md transition-colors;
 }
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.7s ease-out;
-}
-
-.fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
-}
