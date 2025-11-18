@@ -65,6 +65,14 @@ export default function Navigation() {
                 Book
               </button>
 
+              <button onClick={() => scrollToSection("dmi")} className="...">
+  DMI
+</button>
+              <section id="dmi">
+   <DMI />
+</section>
+
+
               {/* Courses */}
               <button
                 onClick={() => scrollToSection('courses')}
