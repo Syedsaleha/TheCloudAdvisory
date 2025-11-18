@@ -20,8 +20,7 @@ export default function Navigation() {
           {/* Brand */}
           <div className="flex items-center">
             <span className="text-2xl font-bold text-white">
-              TheCloud
-              <span className="text-yellow-400">Advisory</span>
+              TheCloud<span className="text-yellow-400">Advisory</span>
             </span>
           </div>
 
@@ -29,69 +28,36 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
 
-              {/* Home */}
-              <button
-                onClick={() => scrollToSection('home')}
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
+              <button onClick={() => scrollToSection('home')} className="text-gray-300 hover:text-yellow-400 font-medium">
                 Home
               </button>
 
-              {/* University (opens in new tab) */}
-              <a
-                href="https://university.pravinmishra.in/learn"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
+              <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer"
+                 className="text-gray-300 hover:text-yellow-400 font-medium">
                 University
               </a>
 
-              {/* Blog (opens in new tab) */}
-              <a
-                href="https://pravinmishra.in/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
+              <a href="https://pravinmishra.in/" target="_blank" rel="noopener noreferrer"
+                 className="text-gray-300 hover:text-yellow-400 font-medium">
                 Blog
               </a>
 
-              {/* Book */}
-              <button
-                onClick={() => scrollToSection('book')}
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
+              <button onClick={() => scrollToSection('book')} className="text-gray-300 hover:text-yellow-400 font-medium">
                 Book
               </button>
 
-     <a
-  href="/dmi"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
->
-  DMI
-</a>
+              {/* ⭐ OPEN DMI IN NEW TAB */}
+              <a href="/dmi" target="_blank" rel="noopener noreferrer"
+                 className="text-gray-300 hover:text-yellow-400 font-medium">
+                DMI
+              </a>
 
-
-
-
-
-
-              {/* Courses */}
-              <button
-                onClick={() => scrollToSection('courses')}
-                className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
-              >
+              <button onClick={() => scrollToSection('courses')} className="text-gray-300 hover:text-yellow-400 font-medium">
                 Courses
               </button>
 
-              {/* Contact */}
-              <button
-                onClick={() => scrollToSection('contact')}
-                className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition-all duration-200 hover:shadow-lg hover:shadow-yellow-400/50"
-              >
+              <button onClick={() => scrollToSection('contact')}
+                className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500">
                 Contact
               </button>
             </div>
@@ -99,56 +65,43 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-300 hover:text-yellow-400 transition-colors"
-            >
+            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-yellow-400">
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
-
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
-    {isOpen && (
-  <div className="md:hidden bg-black border-t border-gray-800">
-    <div className="px-2 pt-2 pb-3 space-y-1">
+      {/* Mobile menu */}
+      {isOpen && (
+        <div className="md:hidden bg-black border-t border-gray-800">
+          <div className="px-2 pt-2 pb-3 space-y-1">
 
-      <button onClick={() => scrollToSection('home')} className="mobile-item">
-        Home
-      </button>
+            <button onClick={() => scrollToSection('home')} className="mobile-item">Home</button>
 
-      <a href="https://university.pravinmishra.in/learn" target="_blank"
-         rel="noopener noreferrer" className="mobile-item">
-        University
-      </a>
+            <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer" className="mobile-item">
+              University
+            </a>
 
-      <a href="https://pravinmishra.in/" target="_blank"
-         rel="noopener noreferrer" className="mobile-item">
-        Blog
-      </a>
- <button onClick={() => scrollToSection("dmi")} className="mobile-item">
-              DMI
+            <a href="https://pravinmishra.in/" target="_blank" rel="noopener noreferrer" className="mobile-item">
+              Blog
+            </a>
+
+            <button onClick={() => scrollToSection('book')} className="mobile-item">Book</button>
+
+            {/* ⭐ Mobile - open new DMI page */}
+            <a href="/dmi" target="_blank" rel="noopener noreferrer" className="mobile-item">DMI</a>
+
+            <button onClick={() => scrollToSection('courses')} className="mobile-item">Courses</button>
+
+            <button onClick={() => scrollToSection('contact')}
+              className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md">
+              Contact
             </button>
-      <button onClick={() => scrollToSection('book')} className="mobile-item">
-        Book
-      </button>
 
-      <button onClick={() => scrollToSection('courses')} className="mobile-item">
-        Courses
-      </button>
-
-      <button
-        onClick={() => scrollToSection('contact')}
-        className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md font-semibold hover:bg-yellow-500 transition-colors"
-      >
-        Contact
-      </button>
-
-    </div>
-  </div>
-)}
+          </div>
+        </div>
+      )}
 
     </nav>
   );
