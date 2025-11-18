@@ -155,27 +155,63 @@ const weeks = [
       </section>
 
       {/* WEEK TIMELINE */}
-      <section className="py-20 px-6 max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">12-Week DevOps Roadmap</h2>
+{/* WEEK TIMELINE */}
+<section className="py-20 px-6 max-w-6xl mx-auto">
+  <h2 className="text-4xl font-bold text-center mb-16">12-Week DevOps Roadmap</h2>
 
-        <div className="relative border-l-4 border-yellow-400 ml-6">
-          {weeks.map((w, i) => (
-            <div
-              key={i}
-              className="mb-12 relative pl-10"
-              data-aos="fade-up"
-              data-aos-delay={i * 80}
-            >
-              <div className="absolute -left-3 top-2 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-lg"></div>
+  <div className="relative">
 
-              <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
-                <h3 className="text-2xl font-bold text-black mb-2">{w.week}</h3>
-                <p className="text-gray-700 text-lg">{w.topic}</p>
-              </div>
-            </div>
-          ))}
+    {/* timeline center line */}
+    <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-400 via-yellow-300 to-yellow-500 transform -translate-x-1/2"></div>
+
+    {weeks.map((w, i) => (
+      <div
+        key={i}
+        className={`mb-16 flex items-center w-full ${
+          i % 2 === 0 ? "justify-start" : "justify-end"
+        }`}
+        data-aos="fade-up"
+        data-aos-delay={i * 80}
+      >
+        <div className="w-1/2 pr-8 pl-8 relative">
+
+          {/* DOT */}
+          <div
+            className="absolute top-5 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-lg
+                       left-[calc(100%-0.5rem)] transform -translate-x-1/2"
+            style={{
+              left: i % 2 === 0 ? "100%" : "0%",
+              transform: i % 2 === 0 ? "translate(-50%,0)" : "translate(-50%,0)",
+            }}
+          ></div>
+
+          {/* CARD */}
+          <div
+            className={`bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition 
+              ${i % 2 === 0 ? "text-left" : "text-left"}`}
+          >
+            <h3 className="text-2xl font-bold text-black mb-2">{w.week}</h3>
+            <p className="text-gray-700 text-lg leading-relaxed">{w.topic}</p>
+          </div>
         </div>
-      </section>
+      </div>
+    ))}
+
+    {/* FINAL ACHIEVEMENT BOX */}
+    <div className="flex justify-center mt-20" data-aos="zoom-in">
+
+      <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black p-8 rounded-2xl shadow-xl w-[80%] text-center border border-yellow-200">
+        <h3 className="text-3xl font-extrabold mb-2">🎉 DevOps Roadmap Completed!</h3>
+        <p className="text-lg font-medium">
+          You are now fully prepared to work on real-world DevOps projects & crack interviews.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
       {/* TESTIMONIAL SLIDER */}
       <section className="py-24 bg-gray-100 px-6">
