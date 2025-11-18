@@ -65,7 +65,7 @@ export default function Navigation() {
                 Book
               </button>
 
-          <a
+     <a
   href="/dmi"
   target="_blank"
   rel="noopener noreferrer"
@@ -73,6 +73,7 @@ export default function Navigation() {
 >
   DMI
 </a>
+
 
 
 
