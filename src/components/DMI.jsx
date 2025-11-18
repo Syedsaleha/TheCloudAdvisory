@@ -95,11 +95,11 @@ const weeks = [
       image: "https://media.licdn.com/dms/image/v2/D5635AQGSdjVkC-S_Tg/profile-framedphoto-shrink_800_800/B56ZlDsRW0IsAg-/0/1757777303331?e=1764079200&v=beta&t=zHI2f4jT8IMzUHaPbOEaTmOgt9ZdEflTeuIGTg9Rq5U",
     },
     {
-      name: "Sneha Rao",
-      role: "DevOps Associate – Cohort-1",
+      name: "Tanisha Borana",
+      role: "DMI – Cohort-1",
       feedback:
-        "Every week had real-world labs. This program made DevOps super easy to understand!",
-      image: "https://randomuser.me/api/portraits/women/65.jpg",
+        "Truly proud to be part of Cohort 1 this program has been a transformative journey that shaped me into a more confident in DevOps and Cloud. I’m sincerely grateful for this incredible opportunity to learn and grow. A special thank you to our trainer Pravin Mishra, whose dedication and guidance made all the difference. My appreciation also goes to all the co-mentors Abhishek Makwana, Praveen Pandey specially for their constant support, and to my amazing Cohort 1 colleagues your teamwork, encouragement, and willingness to help make this journey even more meaningful.",
+      image: "https://media.licdn.com/dms/image/v2/D4D35AQE_cw2j7p3YtQ/profile-framedphoto-shrink_800_800/B4DZnT8z0PIgAg-/0/1760197557940?e=1764079200&v=beta&t=_5W6tefqV9YL-rvwKjIk8LBIVce70Vumr4A002DvKA4",
     },
     {
       name: "Arun Patel",
