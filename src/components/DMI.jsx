@@ -155,47 +155,54 @@ const weeks = [
       </section>
 
     
-{/* WEEK TIMELINE */}
-<section className="py-20 px-6 max-w-6xl mx-auto">
-  <h2 className="text-4xl font-bold text-center mb-16">12-Week DevOps Roadmap</h2>
+{/* WEEK TIMELINE – COMPACT VERSION */}
+<section className="py-16 px-4 max-w-4xl mx-auto">
+  <h2 className="text-3xl font-bold text-center mb-12">12-Week DevOps Roadmap</h2>
 
   <div className="relative">
 
-    {/* timeline center line */}
-    <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-400 via-yellow-300 to-yellow-500 transform -translate-x-1/2"></div>
+    {/* Center Line */}
+    <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-yellow-400 transform -translate-x-1/2"></div>
 
     {weeks.map((w, i) => (
       <div
         key={i}
-        className={`mb-16 flex items-center w-full ${
+        className={`mb-10 flex w-full ${
           i % 2 === 0 ? "justify-start" : "justify-end"
         }`}
         data-aos="fade-up"
-        data-aos-delay={i * 80}
+        data-aos-delay={i * 60}
       >
-        <div className="w-1/2 pr-8 pl-8 relative">
+        <div className="w-1/2 px-4 relative">
 
-          {/* DOT */}
+          {/* Dot */}
           <div
-            className="absolute top-5 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-lg
-                       left-[calc(100%-0.5rem)] transform -translate-x-1/2"
+            className="absolute top-2 w-4 h-4 bg-yellow-400 border-2 border-white rounded-full shadow"
             style={{
               left: i % 2 === 0 ? "100%" : "0%",
-              transform: i % 2 === 0 ? "translate(-50%,0)" : "translate(-50%,0)",
+              transform: "translate(-50%, 0)",
             }}
           ></div>
 
-          {/* CARD */}
-          <div
-            className={`bg-white p-6 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transition 
-              ${i % 2 === 0 ? "text-left" : "text-left"}`}
-          >
-            <h3 className="text-2xl font-bold text-black mb-2">{w.week}</h3>
-            <p className="text-gray-700 text-lg leading-relaxed">{w.topic}</p>
+          {/* Small Card */}
+          <div className="bg-white p-4 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+            <h3 className="text-lg font-bold text-black">{w.week}</h3>
+            <p className="text-gray-600 text-sm leading-relaxed">{w.topic}</p>
           </div>
         </div>
       </div>
     ))}
+
+    {/* Final Achievement */}
+    <div className="flex justify-center mt-16" data-aos="zoom-in">
+      <div className="bg-yellow-400 text-black p-4 rounded-xl shadow-md text-center w-[70%] border border-yellow-500">
+        <h3 className="text-xl font-bold">🎉 DevOps Journey Completed!</h3>
+        <p className="text-sm">You’re now ready for real-world DevOps projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     {/* FINAL ACHIEVEMENT BOX */}
     <div className="flex justify-center mt-20" data-aos="zoom-in">
