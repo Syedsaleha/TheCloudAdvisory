@@ -81,11 +81,11 @@ const weeks = [
       image: "https://media.licdn.com/dms/image/v2/C5103AQHZh8sVH-uNqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1549595986002?e=1764806400&v=beta&t=EfojpBz32jRZjXXOtKxKWaUWn7yckbgSY0YqEbyBGxQ",
     },
     {
-      name: "Aditi Verma",
-      role: "Cloud Engineer – Cohort-1",
+      name: "Samanta Rizzo",
+      role: "DMI – Cohort-1",
       feedback:
-        "Hands-on AWS, Kubernetes and CI/CD helped me crack interviews confidently. Best DevOps mentorship program!",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
+        "Here, the mentors truly care about our growth. Pravin Mishra, Praveen Pandey, Abhishek Makwana, Manish Kumar, Wejdan Alahmari, Anisa Bibi and the entire team have guided us through tough moments and helped us build real confidence. Over the past 12 weeks, we’ve grown together as a supportive community. Even those who didn’t complete Cohort-1 aren’t left behind they joined Cohort-2, and we still check on them because we’re all in this together.",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGTSnmSulkNWw/profile-displayphoto-shrink_800_800/B4DZdU_SFIHAAc-/0/1749477566085?e=1764806400&v=beta&t=a3a2PBme1lxXAjiVoXgzD-D0VylooESu0Hr2g2aNTmY",
     },
     {
       name: "Aman Kumar",
