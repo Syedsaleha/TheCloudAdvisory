@@ -1,5 +1,8 @@
-import Navigation from "./Navigation";
-import Footer from "./Footer";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 export default function DMI() {
   const weeks = [
@@ -115,7 +118,7 @@ const testimonials = [
 </section>
 
 
-{/* TESTIMONIALS — Minimal Elegant Professional */}
+{/* TESTIMONIALS — SLIDER */}
 <section className="py-24 bg-gray-100 px-6">
   <h2
     className="text-4xl font-bold text-center mb-16 text-black"
@@ -124,39 +127,57 @@ const testimonials = [
     What Students Say
   </h2>
 
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+  <div className="max-w-5xl mx-auto">
 
-    {testimonials.map((t, i) => (
-      <div
-        key={i}
-        data-aos="fade-up"
-        data-aos-delay={i * 120}
-        className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 
-                   hover:shadow-xl hover:border-gray-300 transition-all duration-300"
-      >
-        
-        {/* Top Section: Photo + Info */}
-        <div className="flex items-center gap-4 mb-6">
-          <img
-            src={t.image}
-            className="w-14 h-14 rounded-full border border-gray-300 shadow-sm object-cover"
-          />
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      spaceBetween={30}
+      slidesPerView={1}
+      breakpoints={{
+        640: { slidesPerView: 1 },
+        1024: { slidesPerView: 2 },
+      }}
+      className="pb-12"
+    >
 
-          <div>
-            <h3 className="text-lg font-semibold text-black">{t.name}</h3>
-            <p className="text-gray-500 text-sm">{t.role}</p>
+      {testimonials.map((t, i) => (
+        <SwiperSlide key={i}>
+          <div
+            data-aos="fade-up"
+            className="
+              bg-white rounded-xl p-8 shadow-lg border border-gray-200 
+              hover:shadow-xl transition-all duration-300
+            "
+          >
+
+            {/* Profile */}
+            <div className="flex items-center gap-4 mb-6">
+              <img
+                src={t.image}
+                className="w-16 h-16 rounded-full border object-cover shadow-sm"
+              />
+              <div>
+                <h3 className="text-lg font-semibold">{t.name}</h3>
+                <p className="text-gray-500 text-sm">{t.role}</p>
+              </div>
+            </div>
+
+            {/* Feedback */}
+            <p className="text-gray-700 leading-relaxed">
+              “{t.feedback}”
+            </p>
           </div>
-        </div>
+        </SwiperSlide>
+      ))}
 
-        {/* Feedback */}
-        <p className="text-gray-700 leading-relaxed">
-          “{t.feedback}”
-        </p>
-      </div>
-    ))}
+    </Swiper>
 
   </div>
 </section>
+
 
 
 
