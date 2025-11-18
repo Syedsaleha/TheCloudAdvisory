@@ -65,9 +65,15 @@ export default function Navigation() {
                 Book
               </button>
 
-              <button onClick={() => scrollToSection("dmi")} className="...">
+            <a
+  href="/dmi.html"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
+>
   DMI
-</button>
+</a>
+
 
 
 
