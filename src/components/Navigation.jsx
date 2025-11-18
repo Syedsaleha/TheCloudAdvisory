@@ -1,15 +1,23 @@
-import { Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+  // 🔥 Smart scroll function (works across pages)
+  const goToSection = (id) => {
+    if (window.location.pathname !== "/") {
+      // If NOT on home → redirect to home
+      window.location.href = `/#${id}`;
+      return;
     }
+
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+
+    setIsOpen(false);
   };
 
   return (
@@ -28,41 +36,36 @@ export default function Navigation() {
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
 
-              <button onClick={() => scrollToSection('home')} className="text-gray-300 hover:text-yellow-400 font-medium">
+              <button onClick={() => goToSection("home")} className="nav-link">
                 Home
               </button>
 
-              <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer"
-                 className="text-gray-300 hover:text-yellow-400 font-medium">
+              <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer" className="nav-link">
                 University
               </a>
 
-              <a href="https://pravinmishra.in/" target="_blank" rel="noopener noreferrer"
-                 className="text-gray-300 hover:text-yellow-400 font-medium">
+              <a href="https://pravinmishra.in/" target="_blank" rel="noopener noreferrer" className="nav-link">
                 Blog
               </a>
 
-              <button onClick={() => scrollToSection('book')} className="text-gray-300 hover:text-yellow-400 font-medium">
+              <button onClick={() => goToSection("book")} className="nav-link">
                 Book
               </button>
 
-              {/* ⭐ OPEN DMI IN NEW TAB */}
-           <a
-  href="/dmi"
-  className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
->
-  DMI
-</a>
+              {/* DMI Page */}
+              <a href="/dmi" className="nav-link">DMI</a>
 
-
-              <button onClick={() => scrollToSection('courses')} className="text-gray-300 hover:text-yellow-400 font-medium">
+              <button onClick={() => goToSection("courses")} className="nav-link">
                 Courses
               </button>
 
-              <button onClick={() => scrollToSection('contact')}
-                className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500">
+              <button
+                onClick={() => goToSection("contact")}
+                className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500"
+              >
                 Contact
               </button>
+
             </div>
           </div>
 
@@ -75,12 +78,12 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-black border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1">
 
-            <button onClick={() => scrollToSection('home')} className="mobile-item">Home</button>
+            <button onClick={() => goToSection("home")} className="mobile-item">Home</button>
 
             <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer" className="mobile-item">
               University
@@ -90,22 +93,22 @@ export default function Navigation() {
               Blog
             </a>
 
-            <button onClick={() => scrollToSection('book')} className="mobile-item">Book</button>
+            <button onClick={() => goToSection("book")} className="mobile-item">Book</button>
 
-            {/* ⭐ Mobile - open new DMI page */}
-            <a href="/dmi" target="_blank" rel="noopener noreferrer" className="mobile-item">DMI</a>
+            <a href="/dmi" className="mobile-item">DMI</a>
 
-            <button onClick={() => scrollToSection('courses')} className="mobile-item">Courses</button>
+            <button onClick={() => goToSection("courses")} className="mobile-item">Courses</button>
 
-            <button onClick={() => scrollToSection('contact')}
-              className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md">
+            <button
+              onClick={() => goToSection("contact")}
+              className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md"
+            >
               Contact
             </button>
 
           </div>
         </div>
       )}
-
     </nav>
   );
 }
