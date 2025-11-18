@@ -78,7 +78,7 @@ const weeks = [
       role: "DMI - Cohort-1",
       feedback:
         "I was selected in the top 100. I am very happy with the cohort. I got direction as to how to upskill my DevOps skills. Lots of hands on labs and assignments. The course content is very good. There is regular followup with the co-mentors. Team members helping each other. The engergy is just great. Don't miss out on this opportunity.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      image: "https://media.licdn.com/dms/image/v2/C5103AQHZh8sVH-uNqQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1549595986002?e=1764806400&v=beta&t=EfojpBz32jRZjXXOtKxKWaUWn7yckbgSY0YqEbyBGxQ",
     },
     {
       name: "Aditi Verma",
