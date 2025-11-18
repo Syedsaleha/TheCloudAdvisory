@@ -14,28 +14,41 @@ export default function Books() {
     document.querySelectorAll(".fade-section").forEach((el) => observer.observe(el));
   }, []);
 
-  const books = [
-    {
-      title: "Ultimate Git and GitHub for Modern Software Development",
-      desc: "Master Git, GitHub workflows, version control, and real-world team collaboration techniques.",
-      signature: "P. Mishra",
-      author: "Pravin Mishra",
-      img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
-      rating: "4.9",
-      reviews: "14",
-      link: "https://www.amazon.in/dp/8197223831",
-    },
-    {
-      title: "Cloud Computing with AWS",
-      desc: "A beginner-friendly guide to mastering AWS fundamentals and preparing for AWS Cloud Practitioner.",
-      signature: "P. Mishra",
-      author: "Pravin Mishra",
-      img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
-      rating: "4.3",
-      reviews: "21",
-      link: "https://www.amazon.in/dp/1484291719",
-    },
-  ];
+const books = [
+  {
+    title: "Ultimate Git and GitHub for Modern Software Development",
+    desc: "Master Git, GitHub workflows, version control, and real-world team collaboration techniques.",
+    signature: "P. Mishra",
+    author: "Pravin Mishra",
+    img: "https://m.media-amazon.com/images/I/71EAHWURLTL._AC_UF1000,1000_QL80_.jpg",
+    rating: "4.9",
+    reviews: "14",
+    link: "https://www.amazon.in/dp/8197223831",
+  },
+  {
+    title: "Cloud Computing with AWS",
+    desc: "A beginner-friendly guide to mastering AWS fundamentals and preparing for AWS Cloud Practitioner.",
+    signature: "P. Mishra",
+    author: "Pravin Mishra",
+    img: "https://m.media-amazon.com/images/I/61ozZNaPh+L._AC_UF1000,1000_QL80_.jpg",
+    rating: "4.3",
+    reviews: "21",
+    link: "https://www.amazon.in/dp/1484291719",
+  },
+
+  // ⭐ NEW BOOK ADDED HERE ⭐
+  {
+    title: "Mastering DevOps: CI/CD, Containers & Cloud Automation",
+    desc: "A complete practical guide for DevOps beginners — covering CI/CD, Docker, Kubernetes, GitHub Actions, and AWS automation.",
+    signature: "P. Mishra",
+    author: "Pravin Mishra",
+    img: "https://m.media-amazon.com/images/I/71tIrpTgHfL.jpg", // change if needed
+    rating: "4.8",
+    reviews: "32",
+    link: "https://www.amazon.in", // add correct link
+  },
+];
+
 
   return (
     <section id="book" className="relative pt-12 pb-20 px-6 bg-white text-[#0a0f1f] scroll-mt-24 fade-section">
