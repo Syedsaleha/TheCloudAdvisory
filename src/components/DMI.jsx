@@ -357,40 +357,40 @@ const weeks = [
   );
 }
 <style>{`
-  /* MOVING BORDER ANIMATION */
+  /* Moving Gradient Border */
   .animated-border {
     position: relative;
-    overflow: hidden;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .animated-border::before {
     content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
     background: linear-gradient(
       120deg,
-      #ffdd00,
-      #00aaff,
-      #ff00aa,
-      #ffdd00
+      #facc15,
+      #3b82f6,
+      #ec4899,
+      #facc15
     );
     background-size: 300% 300%;
     animation: borderMove 4s linear infinite;
-    z-index: -1;
     border-radius: 20px;
+    z-index: -1;
   }
 
   .animated-border::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: #fff;      /* inside box color */
-    border-radius: 18px;   /* slightly smaller inside */
-    z-index: 1;
+    background: white;
+    border-radius: 17px;
+    z-index: -1;
   }
 
   @keyframes borderMove {
@@ -399,4 +399,3 @@ const weeks = [
     100% { background-position: 0% 50%; }
   }
 `}</style>
-
