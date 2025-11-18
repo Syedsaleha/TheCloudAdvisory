@@ -47,10 +47,13 @@ export default function Navigation() {
               </button>
 
               {/* ⭐ OPEN DMI IN NEW TAB */}
-              <a href="/dmi" target="_blank" rel="noopener noreferrer"
-                 className="text-gray-300 hover:text-yellow-400 font-medium">
-                DMI
-              </a>
+           <a
+  href="/dmi"
+  className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
+>
+  DMI
+</a>
+
 
               <button onClick={() => scrollToSection('courses')} className="text-gray-300 hover:text-yellow-400 font-medium">
                 Courses
