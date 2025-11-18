@@ -65,14 +65,15 @@ export default function Navigation() {
                 Book
               </button>
 
-            <a
-  href="/dmi.html"
+          <a
+  href="/dmi"
   target="_blank"
   rel="noopener noreferrer"
   className="text-gray-300 hover:text-yellow-400 transition-colors duration-200 font-medium"
 >
   DMI
 </a>
+
 
 
 
