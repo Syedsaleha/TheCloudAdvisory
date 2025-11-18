@@ -154,7 +154,7 @@ const weeks = [
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
       </section>
 
-      {/* WEEK TIMELINE */}
+    
 {/* WEEK TIMELINE */}
 <section className="py-20 px-6 max-w-6xl mx-auto">
   <h2 className="text-4xl font-bold text-center mb-16">12-Week DevOps Roadmap</h2>
