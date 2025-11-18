@@ -74,10 +74,10 @@ const weeks = [
 
   const testimonials = [
     {
-      name: "Rohit Sharma",
-      role: "DevOps Engineer – Cohort-1",
+      name: "Anuradha Iyer",
+      role: "DMI - Cohort-1",
       feedback:
-        "DMI Cohort-1 changed my career completely. The 12-week structure, projects and mentorship made me job-ready.",
+        "I was selected in the top 100. I am very happy with the cohort. I got direction as to how to upskill my DevOps skills. Lots of hands on labs and assignments. The course content is very good. There is regular followup with the co-mentors. Team members helping each other. The engergy is just great. Don't miss out on this opportunity.",
       image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
