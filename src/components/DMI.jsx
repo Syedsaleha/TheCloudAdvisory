@@ -102,11 +102,11 @@ const weeks = [
       image: "https://media.licdn.com/dms/image/v2/D4D35AQE_cw2j7p3YtQ/profile-framedphoto-shrink_800_800/B4DZnT8z0PIgAg-/0/1760197557940?e=1764079200&v=beta&t=_5W6tefqV9YL-rvwKjIk8LBIVce70Vumr4A002DvKA4",
     },
     {
-      name: "Arun Patel",
-      role: "Cloud Support Engineer – Cohort-1",
+      name: "Akintade Aduroja",
+      role: "DMI – Cohort-1",
       feedback:
-        "The mentorship and guidance was unmatched. Best learning experience I've had.",
-      image: "https://randomuser.me/api/portraits/men/20.jpg",
+        "I'm very proud of the creator of this movement Pravin Mishra ,my ever dependable mentors Praveen Pandey ,Abdulrahman Al-Ahdal and others who have really given us all room to fly high in this journey ,and like they say learning never stops. Mastery is not in the multitude, but in the devotion to one motion, until it becomes the soul’s reflex.",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQE-fZe00UwyAg/profile-displayphoto-crop_800_800/B4DZlh5cHYG8AM-/0/1758284072405?e=1764806400&v=beta&t=FfSQWxuvAQewsipl5-0kjALqX6vfMMSmYMmxh3uRYTc",
     },
   ];
 
