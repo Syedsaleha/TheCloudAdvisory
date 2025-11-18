@@ -248,7 +248,7 @@ export default function DMI() {
         </p>
 
         <a
-          href="YOUR_GOOGLE_FORM_LINK"
+          href="https://forms.gle/59x1zrHzSSquZoxi8"
           target="_blank"
           rel="noopener noreferrer"
           className="px-10 py-4 text-black font-bold text-lg bg-white rounded-xl shadow-xl hover:scale-105 transition"
