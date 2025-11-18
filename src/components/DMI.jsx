@@ -88,11 +88,11 @@ const weeks = [
       image: "https://media.licdn.com/dms/image/v2/D4D03AQGTSnmSulkNWw/profile-displayphoto-shrink_800_800/B4DZdU_SFIHAAc-/0/1749477566085?e=1764806400&v=beta&t=a3a2PBme1lxXAjiVoXgzD-D0VylooESu0Hr2g2aNTmY",
     },
     {
-      name: "Aman Kumar",
-      role: "SRE Intern – Cohort-1",
+      name: "Mobarak Hosen",
+      role: "DMI – Cohort-1",
       feedback:
-        "The practical projects and AWS deep dive helped me land my first DevOps internship!",
-      image: "https://randomuser.me/api/portraits/men/60.jpg",
+        "I wasn’t selected in the initial 100! Then when I found its a day long session for once in every week. I get interested and involved in doing assignments while being consistent. After 2 weeks I got promoted to top 100 and everything gets changed. This cohort is free but you have to be deeply committed. For me: I really feel great to be with this community. Mentor, co-mentors, team members everyone is giving their efforts to ensure you are learning by doing not just theoretically.",
+      image: "https://media.licdn.com/dms/image/v2/D5635AQGSdjVkC-S_Tg/profile-framedphoto-shrink_800_800/B56ZlDsRW0IsAg-/0/1757777303331?e=1764079200&v=beta&t=zHI2f4jT8IMzUHaPbOEaTmOgt9ZdEflTeuIGTg9Rq5U",
     },
     {
       name: "Sneha Rao",
