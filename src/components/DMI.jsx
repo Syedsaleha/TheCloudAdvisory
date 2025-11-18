@@ -87,30 +87,60 @@ export default function DMI() {
 </section>
 
 
-      {/* TESTIMONIALS */}
-      <section className="py-20 bg-gray-100 px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">What Students Say</h2>
+   {/* TESTIMONIALS */}
+<section className="py-24 bg-gray-100 px-6">
+  <h2
+    className="text-4xl font-bold text-center mb-16"
+    data-aos="fade-up"
+  >
+    What Students Say
+  </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              data-aos="fade-up"
-              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300"
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <img src={t.image} className="w-16 h-16 rounded-full border" />
-                <div>
-                  <h3 className="text-lg font-bold">{t.name}</h3>
-                  <p className="text-gray-500">{t.role}</p>
-                </div>
-              </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
 
-              <p className="text-gray-700">{t.feedback}</p>
-            </div>
-          ))}
+    {testimonials.map((t, i) => (
+      <div
+        key={i}
+        data-aos="fade-up"
+        data-aos-delay={i * 150}
+        className="
+          relative bg-white rounded-2xl p-8 shadow-xl
+          hover:shadow-2xl transition-all duration-300
+          border border-gray-200 hover:border-yellow-400
+        "
+      >
+
+        {/* Decorative Gradient Border */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-yellow-400 to-blue-500 rounded-t-2xl"></div>
+
+        {/* Profile */}
+        <div className="flex items-center gap-4 mb-6">
+          <img
+            src={t.image}
+            className="w-16 h-16 rounded-full border-2 border-yellow-400 shadow-md"
+          />
+          <div>
+            <h3 className="text-lg font-bold">{t.name}</h3>
+            <p className="text-gray-500 text-sm">{t.role}</p>
+          </div>
         </div>
-      </section>
+
+        {/* Feedback */}
+        <p className="text-gray-700 leading-relaxed mb-4 italic">
+          "{t.feedback}"
+        </p>
+
+        {/* Star Rating */}
+        <div className="flex items-center gap-1 text-yellow-400">
+          <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          <span className="text-gray-400">({Math.floor(Math.random() * 30) + 10})</span>
+        </div>
+      </div>
+    ))}
+
+  </div>
+</section>
+
 
       {/* SUCCESSFUL OUTCOMES */}
       <section className="py-20 px-6 max-w-5xl mx-auto">
