@@ -204,21 +204,6 @@ const weeks = [
 </section>
 
 
-    {/* FINAL ACHIEVEMENT BOX */}
-    <div className="flex justify-center mt-20" data-aos="zoom-in">
-
-      <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black p-8 rounded-2xl shadow-xl w-[80%] text-center border border-yellow-200">
-        <h3 className="text-3xl font-extrabold mb-2">🎉 DevOps Roadmap Completed!</h3>
-        <p className="text-lg font-medium">
-          You are now fully prepared to work on real-world DevOps projects & crack interviews.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
 
       {/* TESTIMONIAL SLIDER */}
       <section className="py-24 bg-gray-100 px-6">
