@@ -21,6 +21,24 @@ import Footer from "./Footer";
 // COMPONENT
 // ========================
 export default function DMI() {
+
+  // 👇 ADD THIS HERE (Right after function starts)
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 3000); // show after 3 sec
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Your existing arrays
+  const weeks = [
+    { week: "Week 1", topic: "Linux Essentials..." },
+    ...
+  ];
+
 const weeks = [
   {
     week: "Week 0",
