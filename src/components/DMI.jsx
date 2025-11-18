@@ -1,3 +1,6 @@
+import Navigation from "./Navigation";
+import Footer from "./Footer";
+
 export default function DMI() {
   const weeks = [
     { week: "Week 1", topic: "Linux Essentials, Shell Scripting & System Administration" },
@@ -41,16 +44,19 @@ export default function DMI() {
   ];
 
   return (
-    <div className="bg-white text-[#0a0f1f]">
-      
+    <div className="bg-white text-[#0a0f1f] overflow-x-hidden">
+
+      {/* NAVIGATION */}
+      <Navigation />
+
       {/* HERO SECTION */}
-      <section className="relative py-28 text-center bg-gradient-to-br from-black to-gray-900 text-white px-6">
-        <h1 className="text-5xl font-extrabold mb-4 animate-fadeIn">
-          DevOps Micro Internship (DMI)
-        </h1>
-        <p className="text-xl max-w-2xl mx-auto text-gray-300 animate-fadeInUp">
-          12-Week Practical DevOps Internship for Beginners & Professionals —  
-          Hands-on, Project-oriented, and Mentorship-Driven.
+      <section
+        className="relative py-28 text-center bg-gradient-to-br from-black to-gray-900 text-white px-6"
+        data-aos="fade-up"
+      >
+        <h1 className="text-5xl font-extrabold mb-4">DevOps Micro Internship (DMI)</h1>
+        <p className="text-xl max-w-2xl mx-auto text-gray-300">
+          12-Week Practical DevOps Internship — Hands-on, Project-oriented, Mentor-driven.
         </p>
 
         <div className="absolute top-10 left-10 w-40 h-40 bg-yellow-500 blur-3xl opacity-20 rounded-full"></div>
@@ -65,14 +71,12 @@ export default function DMI() {
           {weeks.map((w, i) => (
             <div
               key={i}
-              className={`flex items-center justify-between bg-white shadow-lg border p-6 rounded-2xl fade-up 
-                ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}
-              `}
+              data-aos="fade-up"
+              className={`flex items-center justify-between bg-white shadow-lg border p-6 rounded-2xl 
+              ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
             >
-              {/* Week Number */}
               <div className="text-3xl font-bold text-yellow-500 w-32 text-center">{w.week}</div>
 
-              {/* Content */}
               <div className="text-xl font-semibold text-gray-800 max-w-xl">
                 {w.topic}
               </div>
@@ -89,7 +93,8 @@ export default function DMI() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-8 shadow-xl fade-up hover:shadow-2xl transition duration-300"
+              data-aos="fade-up"
+              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300"
             >
               <div className="flex items-center gap-4 mb-4">
                 <img src={t.image} className="w-16 h-16 rounded-full border" />
@@ -98,13 +103,14 @@ export default function DMI() {
                   <p className="text-gray-500">{t.role}</p>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed">{t.feedback}</p>
+
+              <p className="text-gray-700">{t.feedback}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* SUCCESS OUTCOMES */}
+      {/* SUCCESSFUL OUTCOMES */}
       <section className="py-20 px-6 max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12">Successful Outcomes</h2>
 
@@ -112,8 +118,9 @@ export default function DMI() {
           {outcomes.map((o, i) => (
             <div
               key={i}
+              data-aos="fade-up"
               className="p-6 bg-white shadow-lg border rounded-xl text-center text-lg font-semibold 
-                         hover:scale-105 hover:shadow-2xl transition duration-300 fade-up"
+              hover:scale-105 hover:shadow-2xl transition duration-300"
             >
               {o}
             </div>
@@ -121,35 +128,28 @@ export default function DMI() {
         </div>
       </section>
 
-      {/* COHORT 2 CTA */}
-      <section className="py-24 text-center bg-gradient-to-r from-yellow-300 to-yellow-500">
-        <h2 className="text-4xl font-extrabold mb-4">DMI Cohort-2 Coming Soon</h2>
+      {/* CTA */}
+      <section
+        data-aos="zoom-in"
+        className="py-24 text-center bg-gradient-to-r from-yellow-300 to-yellow-500"
+      >
+        <h2 className="text-4xl font-extrabold mb-4">DMI Cohort-2 Coming Soon!</h2>
         <p className="text-xl text-gray-800 mb-8">
           Limited seats. Register early to secure your spot.
         </p>
-        
+
         <a
           href="YOUR_GOOGLE_FORM_LINK_HERE"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-10 py-4 text-black font-bold text-lg bg-white rounded-xl shadow-xl 
-                     hover:scale-105 transition duration-300"
+          className="px-10 py-4 text-black font-bold text-lg bg-white rounded-xl shadow-xl hover:scale-105 transition"
         >
           Register Here →
         </a>
       </section>
 
-      {/* Fade Animation Styles */}
-      <style>{`
-        .fade-up { 
-          opacity: 0; 
-          transform: translateY(40px); 
-          animation: fadeUp 1s ease-out forwards; 
-        }
-        @keyframes fadeUp {
-          to { opacity: 1; transform: translateY(0); }
-        }
-      `}</style>
+      {/* FOOTER */}
+      <Footer />
     </div>
   );
 }
