@@ -169,22 +169,116 @@ export default function DMI() {
         </div>
       </section>
 
-      {/* OUTCOMES */}
-      <section className="py-20 px-6 max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Successful Outcomes</h2>
+   <section className="py-24 bg-gray-100 px-6">
+  <h2
+    className="text-4xl font-bold text-center mb-16 text-black"
+    data-aos="fade-up"
+  >
+    What Students Say
+  </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {outcomes.map((o, i) => (
-            <div
-              key={i}
-              data-aos="fade-up"
-              className="p-6 bg-white shadow-lg border rounded-xl text-center text-lg font-semibold hover:scale-105 hover:shadow-2xl transition"
-            >
-              {o}
+  <div className="max-w-5xl mx-auto relative">
+
+    {/* Custom Arrow Buttons */}
+    <div className="swiper-button-prev custom-swiper-btn"></div>
+    <div className="swiper-button-next custom-swiper-btn"></div>
+
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }}
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 2500, disableOnInteraction: false }}
+      spaceBetween={30}
+      slidesPerView={1}
+      breakpoints={{
+        640: { slidesPerView: 1 },
+        1024: { slidesPerView: 2 },
+      }}
+      className="pb-12"
+    >
+      {testimonials.map((t, i) => (
+        <SwiperSlide key={i}>
+          <div
+            data-aos="fade-up"
+            className="
+              bg-white rounded-xl p-8 shadow-lg border border-gray-200 
+              hover:shadow-xl transition-all duration-300
+            "
+          >
+
+            <div className="flex items-center gap-4 mb-6">
+              <img
+                src={t.image}
+                className="w-16 h-16 rounded-full border object-cover shadow-sm"
+              />
+              <div>
+                <h3 className="text-lg font-semibold">{t.name}</h3>
+                <p className="text-gray-500 text-sm">{t.role}</p>
+              </div>
             </div>
-          ))}
-        </div>
-      </section>
+
+            <p className="text-gray-700 leading-relaxed">
+              “{t.feedback}”
+            </p>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+
+  {/* Custom Arrow Styles */}
+  <style>{`
+    .custom-swiper-btn {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 20;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .swiper-button-prev.custom-swiper-btn::after,
+    .swiper-button-next.custom-swiper-btn::after {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    /* Hover Glow Effect */
+    .custom-swiper-btn:hover {
+      background: rgba(255, 215, 0, 0.5);
+      border-color: #facc15;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+    }
+
+    /* Positioning */
+    .swiper-button-prev.custom-swiper-btn {
+      left: -20px;
+    }
+
+    .swiper-button-next.custom-swiper-btn {
+      right: -20px;
+    }
+
+    /* Responsive for Mobile */
+    @media (max-width: 640px) {
+      .swiper-button-prev.custom-swiper-btn,
+      .swiper-button-next.custom-swiper-btn {
+        display: none;
+      }
+    }
+  `}</style>
+</section>
+
 
       {/* CTA */}
       <section
