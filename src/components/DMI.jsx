@@ -34,10 +34,6 @@ export default function DMI() {
   }, []);
 
   // Your existing arrays
-  const weeks = [
-    { week: "Week 1", topic: "Linux Essentials..." },
-    ...
-  ];
 
 const weeks = [
   {
