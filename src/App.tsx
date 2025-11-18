@@ -1,49 +1,12 @@
-import { useEffect } from "react";
-import Hero from './components/Hero';
-import Services from './components/Services';
-import About from './components/About';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Navigation from './components/Navigation';
-import Books from "./components/Books";
-import Courses from "./components/Courses";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
 import DMI from "./components/DMI";
 
-function App() {
-
-  // 👉 Scroll Fade-Up Animation
-useEffect(() => {
-  const sections = document.querySelectorAll(".fade-up");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-        }
-      });
-    },
-    { threshold: 0.05 }   // 👈 MOBILE FRIENDLY
-  );
-
-  sections.forEach((sec) => observer.observe(sec));
-}, []);
-
-
+export default function App() {
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
-      <Navigation />
-
-      <Hero />
-      <Services />
-      <Books />
-      <Courses />
-      <About />
-      <Contact />
-      
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/dmi" element={<DMI />} />
+    </Routes>
   );
 }
-
-export default App;
