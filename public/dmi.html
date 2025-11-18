@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DMI - DevOps Micro Internship</title>
+  <link rel="stylesheet" href="/src/index.css" />
+</head>
+
+<body class="bg-white">
+  <div id="dmi-root"></div>
+
+  <script type="module">
+    import DMI from "/src/components/DMI.jsx";
+    import { createRoot } from "react-dom/client";
+    import React from "react";
+
+    const root = createRoot(document.getElementById("dmi-root"));
+    root.render(React.createElement(DMI));
+  </script>
+</body>
+</html>
