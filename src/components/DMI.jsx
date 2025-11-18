@@ -36,55 +36,22 @@ export default function DMI() {
   // Your existing arrays
 
 const weeks = [
-  {
-    week: "Week 0",
-    topic: "Internet, Networking, Basic Tools, DNS, VS Code, ChatGPT for DevOps, Troubleshooting with AI"
-  },
-  {
-    week: "Week 2",
-    topic: "Linux Essentials, VM Setup, System Commands, File System, Permissions, Processes, Networking, Nginx Deployment"
-  },
-  {
-    week: "Week 3",
-    topic: "Git & GitHub – Version Control, Branching, Merging, PR Workflow, GitHub Actions Intro"
-  },
-  {
-    week: "Week 4",
-    topic: "DevOps Fundamentals + AWS Cloud: IAM, S3, EC2, VPC, Subnets, Security Groups, Hosting React App"
-  },
-  {
-    week: "Week 6",
-    topic: "Azure Cloud – VM, Networking, Storage, Database, Deploy React App, Deploy Book Review App (3-tier)"
-  },
-  {
-    week: "Week 7",
-    topic: "Terraform – Infra as Code, Providers, Variables, Modules, Multi-Cloud Infra Deployment (AWS + Azure)"
-  },
-  {
-    week: "Week 8",
-    topic: "Ansible – Configuration Management, SSH Setup, Playbooks, Roles, Full Automation with Terraform + Ansible"
-  },
-  {
-    week: "Week 9",
-    topic: "CI/CD with Azure DevOps – Build & Release Pipelines, Deploy React Apps, Full Production Pipeline"
-  },
-  {
-    week: "Week 10",
-    topic: "Docker – Containers, Dockerfile, Multi-stage Builds, Networking, Volumes, Docker Compose, App Deployment"
-  },
-  {
-    week: "Week 11",
-    topic: "Kubernetes – Architecture, Pods, ReplicaSets, Deployments, Scaling, Minikube/Kind Setup"
-  },
-  {
-    week: "Week 12",
-    topic: "Observability – Prometheus, Grafana, Node Exporter, PromQL, Docker & K8s Metrics Dashboards"
-  },
-  {
-    week: "Week 13",
-    topic: "Final Project, Interview Prep, Resume, GitHub Portfolio + Graduation 🎉"
-  }
+  { week: "Week 0", topic: "Internet, Networking & Basic Tools + ChatGPT Troubleshooting" },
+  { week: "Week 1", topic: "Linux Essentials, Shell Scripting & System Administration" },
+  { week: "Week 2", topic: "Git, GitHub, Branching, Pull Requests, Mini Project" },
+  { week: "Week 3", topic: "DevOps Fundamentals, CI/CD Basics, Agile, Cloud Intro" },
+  { week: "Week 4", topic: "AWS Cloud – IAM, S3, EC2, VPC, Deploy React App" },
+  { week: "Week 5", topic: "More AWS – Databases, RDS, CloudWatch, Deployment" },
+  { week: "Week 6", topic: "Azure Cloud – VM, Networking, Database, Deploy 3-tier App" },
+  { week: "Week 7", topic: "Terraform – IaC, Providers, Variables, Modules, Infra Deployment" },
+  { week: "Week 8", topic: "Ansible – Automation, Playbooks, Roles, Full Cloud Deployment" },
+  { week: "Week 9", topic: "Azure DevOps – Pipelines, CI/CD, Production Deployment" },
+  { week: "Week 10", topic: "Docker & Containerization – Dockerfile, Compose, Multi-stage" },
+  { week: "Week 11", topic: "Kubernetes – Pods, ReplicaSets, Deployments, Scaling" },
+  { week: "Week 12", topic: "Observability – Prometheus, Grafana, Dashboards, Monitoring" },
+  { week: "Week 13", topic: "🎓 Final Project + Graduation" },
 ];
+
 
 
   const testimonials = [
