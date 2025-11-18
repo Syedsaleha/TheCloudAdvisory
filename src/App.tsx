@@ -36,9 +36,6 @@ useEffect(() => {
 
       <Hero />
       <Services />
-      <section id="dmi">
-  <DMI />
-</section>
       <Books />
       <Courses />
       <About />
