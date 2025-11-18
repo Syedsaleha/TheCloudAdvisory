@@ -63,27 +63,29 @@ export default function DMI() {
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
       </section>
 
-      {/* WEEK STRUCTURE */}
-      <section className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">12-Week DevOps Roadmap</h2>
+    {/* WEEK STRUCTURE */}
+<section className="py-20 px-6 max-w-5xl mx-auto">
+  <h2 className="text-4xl font-bold text-center mb-16">12-Week DevOps Roadmap</h2>
 
-        <div className="space-y-10">
-          {weeks.map((w, i) => (
-            <div
-              key={i}
-              data-aos="fade-up"
-              className={`flex items-center justify-between bg-white shadow-lg border p-6 rounded-2xl 
-              ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
-            >
-              <div className="text-3xl font-bold text-yellow-500 w-32 text-center">{w.week}</div>
+  <div className="relative border-l-4 border-yellow-400 ml-6">
 
-              <div className="text-xl font-semibold text-gray-800 max-w-xl">
-                {w.topic}
-              </div>
-            </div>
-          ))}
+    {weeks.map((w, i) => (
+      <div key={i} className="mb-12 relative pl-10" data-aos="fade-up" data-aos-delay={i * 100}>
+
+        {/* Timeline Dot */}
+        <div className="absolute -left-3 top-2 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-lg"></div>
+
+        {/* Card */}
+        <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
+          <h3 className="text-2xl font-bold text-black mb-2">{w.week}</h3>
+          <p className="text-gray-700 text-lg leading-relaxed">{w.topic}</p>
         </div>
-      </section>
+      </div>
+    ))}
+
+  </div>
+</section>
+
 
       {/* TESTIMONIALS */}
       <section className="py-20 bg-gray-100 px-6">
