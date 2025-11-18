@@ -1,6 +1,7 @@
 // ========================
 // IMPORTS
 // ========================
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation as SwiperNav,
