@@ -4,28 +4,28 @@ import { useState } from "react";
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // 🔥 Smart scroll function (works across pages)
+  const linkClass =
+    "text-gray-300 hover:text-yellow-400 font-medium transition";
+
+  // Smooth navigation (works cross-page)
   const goToSection = (id) => {
     if (window.location.pathname !== "/") {
-      // If NOT on home → redirect to home
       window.location.href = `/#${id}`;
       return;
     }
 
     const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+    if (el) el.scrollIntoView({ behavior: "smooth" });
 
     setIsOpen(false);
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-sm z-50 border-b border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-lg z-50 border-b border-gray-800">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
 
-          {/* Brand */}
+          {/* Logo */}
           <div className="flex items-center">
             <span className="text-2xl font-bold text-white">
               TheCloud<span className="text-yellow-400">Advisory</span>
@@ -33,79 +33,82 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:block">
-            <div className="flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
 
-              <button onClick={() => goToSection("home")} className="nav-link">
-                Home
-              </button>
+            <button onClick={() => goToSection("home")} className={linkClass}>
+              Home
+            </button>
 
-              <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer" className="nav-link">
-                University
-              </a>
+            <a href="https://university.pravinmishra.in/learn" target="_blank" className={linkClass}>
+              University
+            </a>
 
-              <a href="https://pravinmishra.in/" target="_blank" rel="noopener noreferrer" className="nav-link">
-                Blog
-              </a>
+            <a href="https://pravinmishra.in/" target="_blank" className={linkClass}>
+              Blog
+            </a>
 
-              <button onClick={() => goToSection("book")} className="nav-link">
-                Book
-              </button>
+            <button onClick={() => goToSection("book")} className={linkClass}>
+              Book
+            </button>
 
-              {/* DMI Page */}
-              <a href="/dmi" className="nav-link">DMI</a>
+            <a href="/dmi" className={linkClass}>DMI</a>
 
-              <button onClick={() => goToSection("courses")} className="nav-link">
-                Courses
-              </button>
+            <button onClick={() => goToSection("courses")} className={linkClass}>
+              Courses
+            </button>
 
-              <button
-                onClick={() => goToSection("contact")}
-                className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500"
-              >
-                Contact
-              </button>
-
-            </div>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-yellow-400">
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            <button
+              onClick={() => goToSection("contact")}
+              className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-semibold hover:bg-yellow-500 transition"
+            >
+              Contact
             </button>
           </div>
+
+          {/* Mobile Button */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-300 hover:text-yellow-400"
+          >
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-black border-t border-gray-800">
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-3 py-4 space-y-2">
 
-            <button onClick={() => goToSection("home")} className="mobile-item">Home</button>
+            <button onClick={() => goToSection("home")} className="mobile-item">
+              Home
+            </button>
 
-            <a href="https://university.pravinmishra.in/learn" target="_blank" rel="noopener noreferrer" className="mobile-item">
+            <a href="https://university.pravinmishra.in/learn" target="_blank" className="mobile-item">
               University
             </a>
 
-            <a href="https://pravinmishra.in/" target="_blank" rel="noopener noreferrer" className="mobile-item">
+            <a href="https://pravinmishra.in/" target="_blank" className="mobile-item">
               Blog
             </a>
 
-            <button onClick={() => goToSection("book")} className="mobile-item">Book</button>
+            <button onClick={() => goToSection("book")} className="mobile-item">
+              Book
+            </button>
 
             <a href="/dmi" className="mobile-item">DMI</a>
 
-            <button onClick={() => goToSection("courses")} className="mobile-item">Courses</button>
+            <button onClick={() => goToSection("courses")} className="mobile-item">
+              Courses
+            </button>
 
             <button
               onClick={() => goToSection("contact")}
-              className="block w-full text-left px-3 py-2 bg-yellow-400 text-black rounded-md"
+              className="block text-left px-3 py-2 bg-yellow-400 text-black rounded-md"
             >
               Contact
             </button>
-
           </div>
         </div>
       )}
