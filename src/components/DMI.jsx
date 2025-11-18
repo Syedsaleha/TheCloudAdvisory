@@ -357,45 +357,12 @@ const weeks = [
   );
 }
 <style>{`
-  /* Moving Gradient Border */
-  .animated-border {
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
   }
-
-  .animated-border::before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    right: -3px;
-    bottom: -3px;
-    background: linear-gradient(
-      120deg,
-      #facc15,
-      #3b82f6,
-      #ec4899,
-      #facc15
-    );
-    background-size: 300% 300%;
-    animation: borderMove 4s linear infinite;
-    border-radius: 20px;
-    z-index: -1;
-  }
-
-  .animated-border::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: white;
-    border-radius: 17px;
-    z-index: -1;
-  }
-
-  @keyframes borderMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+  .animate-slideUp {
+    animation: slideUp 0.6s ease-out forwards;
   }
 `}</style>
+
