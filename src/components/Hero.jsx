@@ -132,7 +132,7 @@ export default function Hero() {
 
             <div className="relative rounded-3xl overflow-hidden border border-gray-800 shadow-2xl">
               <img
-                src="/hero-bg.png"        /* <--- PUT YOUR IMAGE HERE */
+                src="https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg"        /* <--- PUT YOUR IMAGE HERE */
                 alt="Cloud & DevOps Illustration"
                 className="w-[500px] h-[380px] object-cover rounded-3xl"
               />
