@@ -317,6 +317,7 @@ const weeks = [
       bg-white shadow-2xl border border-gray-200
       rounded-2xl p-5 w-[320px]
       animate-slideUp
+      animated-border
     "
   >
     <div className="flex justify-between items-center mb-2">
