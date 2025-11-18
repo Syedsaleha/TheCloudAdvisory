@@ -295,8 +295,58 @@ const weeks = [
         </a>
       </section>
 
+      {/* COHORT 2 POPUP */}
+{showPopup && (
+  <div
+    className="
+      fixed bottom-6 right-6 z-[9999]
+      bg-white shadow-2xl border border-gray-200
+      rounded-2xl p-5 w-[320px]
+      animate-slideUp
+    "
+  >
+    <div className="flex justify-between items-center mb-2">
+      <h3 className="text-xl font-bold text-black">DMI Cohort-2</h3>
+      <button
+        onClick={() => setShowPopup(false)}
+        className="text-gray-500 hover:text-black"
+      >
+        ✕
+      </button>
+    </div>
+
+    <p className="text-gray-700 text-sm mb-4">
+      Registrations are now open! Secure your seat for the next batch.
+    </p>
+
+    <a
+      href="https://forms.gle/59x1zrHzSSquZoxi8"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="
+        block text-center w-full py-3
+        bg-gradient-to-r from-yellow-400 to-yellow-500
+        rounded-xl text-black font-semibold
+        hover:scale-105 transition
+      "
+    >
+      Register Now →
+    </a>
+  </div>
+)}
+
+
       {/* FOOTER */}
       <Footer />
     </div>
   );
 }
+<style>{`
+  @keyframes slideUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-slideUp {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+`}</style>
