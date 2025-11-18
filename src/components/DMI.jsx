@@ -17,22 +17,50 @@ export default function DMI() {
     { week: "Week 12", topic: "Final DevOps Project + Interviews + Portfolio Building" },
   ];
 
-  const testimonials = [
-    {
-      name: "Rohit Sharma",
-      role: "DevOps Engineer – Cohort-1",
-      feedback:
-        "DMI Cohort-1 changed my career completely. The 12-week structure, projects and mentorship made me job-ready.",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-    },
-    {
-      name: "Aditi Verma",
-      role: "Cloud Engineer – Cohort-1",
-      feedback:
-        "Hands-on AWS, Kubernetes and CI/CD helped me crack interviews confidently. Best DevOps mentorship program!",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-    },
-  ];
+const testimonials = [
+  {
+    name: "Rohit Sharma",
+    role: "DevOps Engineer – Cohort-1",
+    feedback:
+      "DMI Cohort-1 changed my career completely. The 12-week structure, projects and mentorship made me job-ready.",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Aditi Verma",
+    role: "Cloud Engineer – Cohort-1",
+    feedback:
+      "Hands-on AWS, Kubernetes and CI/CD helped me crack interviews confidently. Best DevOps mentorship program!",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+
+  // ⭐ New Testimonial 1
+  {
+    name: "Aman Kumar",
+    role: "SRE Intern – Cohort-1",
+    feedback:
+      "The practical projects and AWS deep dive helped me land my first DevOps internship!",
+    image: "https://randomuser.me/api/portraits/men/60.jpg",
+  },
+
+  // ⭐ New Testimonial 2
+  {
+    name: "Sneha Rao",
+    role: "DevOps Associate – Cohort-1",
+    feedback:
+      "Every week had real-world labs. This program made DevOps super easy to understand!",
+    image: "https://randomuser.me/api/portraits/women/65.jpg",
+  },
+
+  // ⭐ New Testimonial 3
+  {
+    name: "Arun Patel",
+    role: "Cloud Support Engineer – Cohort-1",
+    feedback:
+      "The mentorship and guidance was unmatched. Best learning experience I've had.",
+    image: "https://randomuser.me/api/portraits/men/20.jpg",
+  },
+];
+
 
   const outcomes = [
     "Built 4+ real DevOps projects",
