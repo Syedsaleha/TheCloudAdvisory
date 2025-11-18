@@ -3,7 +3,7 @@
 // ========================
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
-  Navigation as SwiperNavigation,
+  Navigation as SwiperNav,
   Pagination,
   Autoplay,
 } from "swiper/modules";
@@ -12,7 +12,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import Navigation from "./Navigation";
+// Rename Navigation → NavBar to avoid conflict
+import NavBar from "./Navigation";
 import Footer from "./Footer";
 
 // ========================
@@ -85,7 +86,7 @@ export default function DMI() {
     <div className="bg-white text-[#0a0f1f] overflow-x-hidden">
 
       {/* NAVIGATION */}
-      <Navigation />
+      <NavBar />
 
       {/* HERO */}
       <section
@@ -106,7 +107,6 @@ export default function DMI() {
         <h2 className="text-4xl font-bold text-center mb-16">12-Week DevOps Roadmap</h2>
 
         <div className="relative border-l-4 border-yellow-400 ml-6">
-
           {weeks.map((w, i) => (
             <div
               key={i}
@@ -114,35 +114,42 @@ export default function DMI() {
               data-aos="fade-up"
               data-aos-delay={i * 80}
             >
-              {/* Dot */}
               <div className="absolute -left-3 top-2 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-lg"></div>
 
-              {/* Card */}
               <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-gray-100">
                 <h3 className="text-2xl font-bold text-black mb-2">{w.week}</h3>
                 <p className="text-gray-700 text-lg">{w.topic}</p>
               </div>
             </div>
           ))}
-
         </div>
       </section>
 
-      {/* TESTIMONIALS SLIDER */}
+      {/* TESTIMONIAL SLIDER */}
       <section className="py-24 bg-gray-100 px-6">
         <h2 className="text-4xl font-bold text-center mb-16 text-black" data-aos="fade-up">
           What Students Say
         </h2>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto relative">
+
+          {/* Custom Buttons */}
+          <div className="swiper-button-prev custom-swiper-btn"></div>
+          <div className="swiper-button-next custom-swiper-btn"></div>
+
           <Swiper
-            modules={[SwiperNavigation, Pagination, Autoplay]}
-            navigation
+            modules={[SwiperNav, Pagination, Autoplay]}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
             pagination={{ clickable: true }}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             spaceBetween={30}
             slidesPerView={1}
-            breakpoints={{ 1024: { slidesPerView: 2 } }}
+            breakpoints={{
+              1024: { slidesPerView: 2 },
+            }}
             className="pb-12"
           >
             {testimonials.map((t, i) => (
@@ -167,118 +174,68 @@ export default function DMI() {
             ))}
           </Swiper>
         </div>
+
+        {/* Custom Arrow Styles */}
+        <style>{`
+          .custom-swiper-btn {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 215, 0, 0.4);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 20;
+            cursor: pointer;
+            transition: 0.3s;
+          }
+
+          .custom-swiper-btn:hover {
+            background: rgba(255, 215, 0, 0.9);
+            border-color: #facc15;
+            box-shadow: 0 0 20px rgba(255, 200, 0, 0.8);
+          }
+
+          .swiper-button-prev.custom-swiper-btn::after,
+          .swiper-button-next.custom-swiper-btn::after {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+          }
+
+          .swiper-button-prev.custom-swiper-btn {
+            left: -20px;
+          }
+          .swiper-button-next.custom-swiper-btn {
+            right: -20px;
+          }
+
+          @media (max-width: 640px) {
+            .custom-swiper-btn {
+              display: none;
+            }
+          }
+        `}</style>
       </section>
 
-   <section className="py-24 bg-gray-100 px-6">
-  <h2
-    className="text-4xl font-bold text-center mb-16 text-black"
-    data-aos="fade-up"
-  >
-    What Students Say
-  </h2>
+      {/* OUTCOMES */}
+      <section className="py-20 px-6 max-w-5xl mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-12">Successful Outcomes</h2>
 
-  <div className="max-w-5xl mx-auto relative">
-
-    {/* Custom Arrow Buttons */}
-    <div className="swiper-button-prev custom-swiper-btn"></div>
-    <div className="swiper-button-next custom-swiper-btn"></div>
-
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      navigation={{
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      }}
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 2500, disableOnInteraction: false }}
-      spaceBetween={30}
-      slidesPerView={1}
-      breakpoints={{
-        640: { slidesPerView: 1 },
-        1024: { slidesPerView: 2 },
-      }}
-      className="pb-12"
-    >
-      {testimonials.map((t, i) => (
-        <SwiperSlide key={i}>
-          <div
-            data-aos="fade-up"
-            className="
-              bg-white rounded-xl p-8 shadow-lg border border-gray-200 
-              hover:shadow-xl transition-all duration-300
-            "
-          >
-
-            <div className="flex items-center gap-4 mb-6">
-              <img
-                src={t.image}
-                className="w-16 h-16 rounded-full border object-cover shadow-sm"
-              />
-              <div>
-                <h3 className="text-lg font-semibold">{t.name}</h3>
-                <p className="text-gray-500 text-sm">{t.role}</p>
-              </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {outcomes.map((o, i) => (
+            <div
+              key={i}
+              data-aos="fade-up"
+              className="p-6 bg-white shadow-lg border rounded-xl text-center text-lg font-semibold hover:scale-105 hover:shadow-2xl transition"
+            >
+              {o}
             </div>
-
-            <p className="text-gray-700 leading-relaxed">
-              “{t.feedback}”
-            </p>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </div>
-
-  {/* Custom Arrow Styles */}
-  <style>{`
-    .custom-swiper-btn {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 20;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    .swiper-button-prev.custom-swiper-btn::after,
-    .swiper-button-next.custom-swiper-btn::after {
-      font-size: 18px;
-      font-weight: bold;
-      color: #000;
-    }
-
-    /* Hover Glow Effect */
-    .custom-swiper-btn:hover {
-      background: rgba(255, 215, 0, 0.5);
-      border-color: #facc15;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
-    }
-
-    /* Positioning */
-    .swiper-button-prev.custom-swiper-btn {
-      left: -20px;
-    }
-
-    .swiper-button-next.custom-swiper-btn {
-      right: -20px;
-    }
-
-    /* Responsive for Mobile */
-    @media (max-width: 640px) {
-      .swiper-button-prev.custom-swiper-btn,
-      .swiper-button-next.custom-swiper-btn {
-        display: none;
-      }
-    }
-  `}</style>
-</section>
-
+          ))}
+        </div>
+      </section>
 
       {/* CTA */}
       <section
@@ -291,7 +248,7 @@ export default function DMI() {
         </p>
 
         <a
-          href="YOUR_GOOGLE_FORM_LINK_HERE"
+          href="YOUR_GOOGLE_FORM_LINK"
           target="_blank"
           rel="noopener noreferrer"
           className="px-10 py-4 text-black font-bold text-lg bg-white rounded-xl shadow-xl hover:scale-105 transition"
