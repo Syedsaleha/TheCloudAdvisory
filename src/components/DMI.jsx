@@ -28,7 +28,7 @@ export default function DMI() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowPopup(true);
-    }, 3000); // show after 3 sec
+    }, 2000); // show after 2 sec
 
     return () => clearTimeout(timer);
   }, []);
