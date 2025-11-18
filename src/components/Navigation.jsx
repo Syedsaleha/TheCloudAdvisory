@@ -68,9 +68,7 @@ export default function Navigation() {
               <button onClick={() => scrollToSection("dmi")} className="...">
   DMI
 </button>
-              <section id="dmi">
-   <DMI />
-</section>
+
 
 
               {/* Courses */}
@@ -122,7 +120,9 @@ export default function Navigation() {
          rel="noopener noreferrer" className="mobile-item">
         Blog
       </a>
-
+ <button onClick={() => scrollToSection("dmi")} className="mobile-item">
+              DMI
+            </button>
       <button onClick={() => scrollToSection('book')} className="mobile-item">
         Book
       </button>
