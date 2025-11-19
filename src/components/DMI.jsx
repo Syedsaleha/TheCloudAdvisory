@@ -212,7 +212,7 @@ const weeks = [
     <div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-xl border">
       <iframe
         className="w-full h-[380px]"
-        src="https://youtu.be/qJD5UCdtjg4?si=qhH0NbHTO7lHPpQ8"
+        src="https://youtu.be/qJD5UCdtjg4?si=SAZNydYmwrv_PAwu"
         title="DMI Intro Video"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
