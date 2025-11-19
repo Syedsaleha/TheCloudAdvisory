@@ -148,6 +148,28 @@ const weeks = [
 </section>
 
 
+{/* VIDEO SECTION */}
+<section className="py-20 bg-gray-50 text-black">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+
+    <h2 className="text-4xl font-bold mb-4">Watch the Program Introduction</h2>
+    <p className="text-gray-600 max-w-2xl mx-auto mb-10">A short overview of what the DevOps Micro Internship will teach you.</p>
+
+    <div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-xl border">
+      <iframe
+        className="w-full h-[380px]"
+        src="https://www.youtube.com/embed/DqfSdsHW090"
+        title="DMI Intro Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+    </div>
+
+  </div>
+</section>
+
+      
+{/* roadmap */}
 <section className="py-20 px-6 max-w-5xl mx-auto">
   <h2 className="text-4xl font-bold text-center mb-16">14-Week DevOps Roadmap</h2>
 
