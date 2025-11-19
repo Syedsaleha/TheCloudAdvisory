@@ -7,20 +7,22 @@ export default function Hero() {
   };
 
   return (
-    <section
-      id="home"
-      className="
-        relative w-full min-h-screen 
-        flex items-center
-        bg-cover bg-center bg-no-repeat
-        overflow-hidden
-      "
-      style={{
-        backgroundImage:
-          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
-        backgroundPosition: "center center",
-      }}
-    >
+  <section
+  id="home"
+  className="
+    relative w-full min-h-screen 
+    flex items-center
+    bg-cover bg-center bg-no-repeat
+    overflow-hidden
+    pt-24
+  "
+  style={{
+    backgroundImage:
+      "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
+    backgroundPosition: "center center",
+  }}
+>
+
       {/* DARK OVERLAY */}
       <div className="absolute inset-0 bg-black/60"></div>
 
