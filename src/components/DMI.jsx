@@ -208,16 +208,16 @@ const weeks = [
 
     <h2 className="text-4xl font-bold mb-4">Watch the Program Introduction</h2>
     <p className="text-gray-600 max-w-2xl mx-auto mb-10">A short overview of what the DevOps Micro Internship will teach you.</p>
+<div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-xl border">
+  <iframe
+    className="w-full h-[380px]"
+    src="https://www.youtube.com/embed/qJD5UCdtjg4"
+    title="DMI Intro Video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</div>
 
-    <div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-xl border">
-      <iframe
-        className="w-full h-[380px]"
-        src="https://youtu.be/qJD5UCdtjg4?si=SAZNydYmwrv_PAwu"
-        title="DMI Intro Video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
-    </div>
 
   </div>
 </section>
