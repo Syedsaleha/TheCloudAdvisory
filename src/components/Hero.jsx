@@ -9,11 +9,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      data-aos="fade"   // fade only, NO movement
-      data-aos-duration="1000"
+      /* ❗ REMOVE AOS COMPLETELY TO STOP IMAGE MOVING */
       className="
         relative w-full min-h-screen 
-        flex items-center 
+        flex items-center justify-center
         bg-cover bg-center bg-no-repeat
         overflow-hidden
         pt-24
@@ -21,19 +20,21 @@ export default function Hero() {
       style={{
         backgroundImage:
           "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
+        backgroundPosition: "center",
+        backgroundSize: "cover",       // 🔥 full image always visible
       }}
     >
-      {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/55"></div>
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* CONTENT */}
-      <div className="relative z-10 px-6 max-w-4xl mx-auto text-center space-y-6">
+      {/* Content */}
+      <div className="relative z-10 px-6 text-center max-w-3xl space-y-6">
 
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+        <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight drop-shadow-xl">
           Transform Your Cloud Journey
         </h1>
 
-        <p className="text-xl text-gray-200 max-w-xl mx-auto">
+        <p className="text-xl text-gray-200 drop-shadow-lg">
           Expert courses, books, and consulting to elevate your DevOps career.
         </p>
 
