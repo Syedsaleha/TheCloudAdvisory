@@ -18,7 +18,7 @@ export default function Hero() {
       "
       style={{
         backgroundImage:
-          "url('https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg')",
+          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
       }}
     >
       {/* DARK OVERLAY */}
