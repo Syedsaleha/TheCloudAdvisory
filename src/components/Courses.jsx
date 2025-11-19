@@ -33,12 +33,12 @@ export default function Courses() {
       link: "https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?couponCode=CP251118BG1",
     },
     {
-      title: "Linux for DevOps, Cloud, and SRE Engineers",
-      duration: "5 hours",
-      price: "₹629",
-      status: "Upcoming",
-      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=PMNVD2025",
+      title: "AWS Cloud Projects for Data & AI Engineers: 5 Projects",
+      duration: "4 hours",
+      price: "₹399",
+      status: "Live",
+      img: "https://img-c.udemycdn.com/course/480x270/6836427_cc7c.jpg",
+      link: "https://www.udemy.com/course/aws-cloud-projects-for-data-ai-engineers-5-projects/?couponCode=CP251118BG1",
     },
     {
       title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
