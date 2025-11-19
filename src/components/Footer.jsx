@@ -75,7 +75,7 @@ export default function Footer() {
 
               {/* YouTube */}
               <a
-                href="https://www.youtube.com/results?search_query=pravin+mishra"
+                href="https://www.youtube.com/@awswithpravinmishra"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
