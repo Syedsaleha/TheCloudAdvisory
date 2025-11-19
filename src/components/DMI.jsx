@@ -121,6 +121,33 @@ const weeks = [
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
       </section>
 
+      {/* HIGHLIGHTS SECTION */}
+<section className="py-20 bg-white text-black">
+  <div className="max-w-6xl mx-auto px-6">
+    <h2 className="text-4xl font-bold text-center mb-14">Why This Program Stands Out</h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      <div className="p-8 rounded-2xl bg-gradient-to-br from-yellow-200 to-yellow-100 border shadow-lg hover:shadow-2xl hover:scale-105 transition">
+        <h3 className="text-xl font-bold mb-3">Project-First Learning</h3>
+        <p className="text-gray-700">Weekly deliverables reviewed by real DevOps mentors.</p>
+      </div>
+
+      <div className="p-8 rounded-2xl bg-gradient-to-br from-blue-200 to-blue-100 border shadow-lg hover:shadow-2xl hover:scale-105 transition">
+        <h3 className="text-xl font-bold mb-3">1:1 Mentor Support</h3>
+        <p className="text-gray-700">Live help, code review and continuous feedback.</p>
+      </div>
+
+      <div className="p-8 rounded-2xl bg-gradient-to-br from-green-200 to-green-100 border shadow-lg hover:shadow-2xl hover:scale-105 transition">
+        <h3 className="text-xl font-bold mb-3">Job-Ready Portfolio</h3>
+        <p className="text-gray-700">Showcase Docker, AWS, Terraform & CI/CD projects.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section className="py-20 px-6 max-w-5xl mx-auto">
   <h2 className="text-4xl font-bold text-center mb-16">14-Week DevOps Roadmap</h2>
 
