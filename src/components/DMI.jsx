@@ -121,7 +121,6 @@ const weeks = [
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
       </section>
 
-{/* WEEK TIMELINE – MEDIUM SIZE */}
 <section className="py-20 px-6 max-w-5xl mx-auto">
   <h2 className="text-4xl font-bold text-center mb-16">
     14-Week DevOps Roadmap
@@ -129,23 +128,30 @@ const weeks = [
 
   <div className="relative">
 
-    {/* Center Line */}
-    <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
+    {/* DESKTOP CENTER LINE */}
+    <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
+
+    {/* MOBILE CENTER LINE */}
+    <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-300 transform -translate-x-1/2"></div>
 
     {weeks.map((w, i) => (
       <div
         key={i}
-        className={`mb-14 flex w-full ${
-          i % 2 === 0 ? "justify-start" : "justify-end"
-        }`}
         data-aos="fade-up"
         data-aos-delay={i * 70}
+        className={`
+          mb-14 flex w-full 
+          ${i % 2 === 0 ? "justify-start" : "justify-end"} 
+          md:flex 
+          hidden md:flex
+        `}
       >
+        {/* DESKTOP CARD (left / right alternating) */}
         <div className="w-[50%] px-6 relative">
 
-          {/* Dot */}
+          {/* Dot only for large screen */}
           <div
-            className="absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md"
+            className="absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md hidden md:block"
             style={{
               left: i % 2 === 0 ? "100%" : "0%",
               transform: "translate(-50%, 0)",
@@ -155,13 +161,30 @@ const weeks = [
           {/* Card */}
           <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-200">
             <h3 className="text-2xl font-bold text-black mb-1">{w.week}</h3>
-            <p className="text-gray-700 text-base leading-relaxed">
-              {w.topic}
-            </p>
+            <p className="text-gray-700 text-base leading-relaxed">{w.topic}</p>
           </div>
         </div>
       </div>
     ))}
+
+    {/* MOBILE VERSION (simple center-line style) */}
+    <div className="md:hidden">
+      {weeks.map((w, i) => (
+        <div key={i} className="relative mb-12 text-center">
+
+          {/* Card (centered) */}
+          <div className="bg-white mx-auto w-[90%] p-6 rounded-2xl shadow-md border border-gray-200 relative">
+            <h3 className="text-xl font-bold text-black">{w.week}</h3>
+            <p className="text-gray-700 text-base mt-2">{w.topic}</p>
+          </div>
+
+          {/* Connector line */}
+          {i !== weeks.length - 1 && (
+            <div className="absolute left-1/2 top-full h-10 w-[2px] bg-yellow-400 transform -translate-x-1/2"></div>
+          )}
+        </div>
+      ))}
+    </div>
 
     {/* FINAL ACHIEVEMENT CARD */}
     <div className="flex justify-center mt-20" data-aos="zoom-in">
@@ -176,6 +199,7 @@ const weeks = [
 
   </div>
 </section>
+
 
 
 
