@@ -8,7 +8,7 @@
     flex items-center pt-16
   "
   style={{
-    backgroundImage: "url('https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg')" 
+    backgroundImage: "https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg" 
     // 👆 Put your image link here
   }}
 >
