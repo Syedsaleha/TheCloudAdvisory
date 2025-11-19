@@ -54,27 +54,29 @@ export default function Courses() {
               alt={c.title}
             />
 
-            {/* TITLE */}
-            <h3 className="text-xl font-semibold text-[#0a0f1f] mb-2 h-[60px]">
-              {c.title}
-            </h3>
+          {/* TITLE */}
+<h3 className="text-xl font-semibold text-[#0a0f1f] mb-4 h-[60px]">
+  {c.title}
+</h3>
 
-            {/* INFO */}
-            <p className="text-gray-600">Duration: {c.duration}</p>
-            <p className="text-yellow-500 font-bold mt-1">{c.price}</p>
+{/* CENTERED INFO */}
+<div className="text-center space-y-1 mb-4">
+  <p className="text-gray-600">Duration: {c.duration}</p>
+  <p className="text-yellow-500 font-bold">{c.price}</p>
 
-            {/* STATUS */}
-            <span
-              className={`inline-block mt-3 px-3 py-1 rounded-full text-sm text-white ${
-                c.status === "Live"
-                  ? "bg-green-600"
-                  : c.status === "Upcoming"
-                  ? "bg-blue-600"
-                  : "bg-gray-600"
-              }`}
-            >
-              {c.status}
-            </span>
+  {/* STATUS BADGE */}
+  <span
+    className={`
+      inline-block px-3 py-1 rounded-full text-sm text-white
+      ${c.status === "Live" ? "bg-green-600" : ""}
+      ${c.status === "Upcoming" ? "bg-blue-600" : ""}
+      ${c.status === "Completed" ? "bg-gray-600" : ""}
+    `}
+  >
+    {c.status}
+  </span>
+</div>
+
 
             {/* Spacer to push button bottom */}
             <div className="flex-grow"></div>
