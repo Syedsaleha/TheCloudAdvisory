@@ -42,6 +42,20 @@ const services = [
     ],
     color: 'blue',
     highlight: 'Enterprise Grade'
+  },
+    {
+    icon: Cloud, // You can change this to another Lucide icon if needed
+    title: 'DevOps Micro Internship (DMI)',
+    description: 'A 12-week practical DevOps Internship with real-time projects, mentorship, and complete DevOps lifecycle experience.',
+    features: [
+      '12-Week Structured Roadmap',
+      'Linux, Git, Docker, Kubernetes',
+      'AWS, Terraform & Ansible Automation',
+      'CI/CD Pipelines (GitHub Actions)',
+      'Final Project + Interview Preparation'
+    ],
+    color: 'yellow',
+    highlight: 'New'
   }
 ];
 
@@ -62,7 +76,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
             const colorClasses = {
