@@ -129,8 +129,10 @@ const weeks = [
     {/* DESKTOP CENTER LINE */}
     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
 
-    {/* MOBILE FULL CONNECTED LINE (goes behind all cards) */}
-    <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-[2px] bg-yellow-400 transform -translate-x-1/2"></div>
+    {/* MOBILE ANIMATED LINE */}
+    <div className="md:hidden absolute left-1/2 top-0 w-[2px] bg-yellow-400 transform -translate-x-1/2 animate-draw-line"
+      style={{ height: "100%" }}>
+    </div>
 
     {/* DESKTOP VERSION */}
     {weeks.map((w, i) => (
@@ -164,18 +166,18 @@ const weeks = [
       </div>
     ))}
 
-    {/* MOBILE VERSION - Continuous line with centered cards */}
+    {/* MOBILE VERSION */}
     <div className="md:hidden relative">
       {weeks.map((w, i) => (
         <div key={i} className="relative mb-12 flex flex-col items-center">
 
           {/* Mobile card */}
-          <div className="bg-white w-[90%] p-6 rounded-2xl shadow-md border border-gray-200 z-10">
+          <div className="bg-white w-[90%] p-6 rounded-2xl shadow-md border border-gray-200 z-10 animate-fade-in">
             <h3 className="text-xl font-bold text-black">{w.week}</h3>
             <p className="text-gray-700 text-base mt-2">{w.topic}</p>
           </div>
 
-          {/* Connector line segment */}
+          {/* Extra connector (small gap filler) */}
           {i !== weeks.length - 1 && (
             <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-[2px] h-12 bg-yellow-400"></div>
           )}
@@ -195,7 +197,31 @@ const weeks = [
     </div>
 
   </div>
+
+  {/* ANIMATION CSS */}
+  <style>{`
+    /* Draw the line from top to bottom */
+    @keyframes drawLine {
+      0% { height: 0; opacity: 0; }
+      100% { height: 100%; opacity: 1; }
+    }
+
+    .animate-draw-line {
+      animation: drawLine 2.5s ease-out forwards;
+    }
+
+    /* Fade-in cards one-by-one */
+    @keyframes fadeInCard {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fadeInCard 0.8s ease-out forwards;
+    }
+  `}</style>
 </section>
+
 
 
 
