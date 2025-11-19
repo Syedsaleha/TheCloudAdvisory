@@ -108,18 +108,72 @@ const weeks = [
       <NavBar />
 
       {/* HERO */}
-      <section
-        className="relative py-28 text-center bg-gradient-to-br from-black to-gray-900 text-white px-6"
-        data-aos="fade-up"
-      >
-        <h1 className="text-5xl font-extrabold mb-4">DevOps Micro Internship (DMI)</h1>
-        <p className="text-xl max-w-2xl mx-auto text-gray-300">
-          12-Week Practical DevOps Internship — Hands-on, Project-oriented, Mentor-driven.
-        </p>
+<section className="relative py-32 text-center bg-gradient-to-br from-black to-gray-900 text-white px-6 overflow-hidden">
 
-        <div className="absolute top-10 left-10 w-40 h-40 bg-yellow-500 blur-3xl opacity-20 rounded-full"></div>
-        <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
-      </section>
+  {/* Glow Elements */}
+  <div className="absolute -top-32 left-1/4 w-80 h-80 bg-yellow-500/20 rounded-full blur-3xl"></div>
+  <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl"></div>
+  <div className="absolute bottom-10 left-1/3 w-72 h-72 bg-purple-500/20 rounded-full blur-3xl"></div>
+
+  <div className="relative max-w-6xl mx-auto">
+    
+    {/* Premium Badge */}
+    <div className="inline-flex items-center space-x-3 bg-white/10 px-6 py-3 rounded-full border border-white/20 backdrop-blur-md mb-6">
+      <span className="w-2 h-2 bg-yellow-400 rounded-full animate-ping"></span>
+      <span className="text-yellow-300 font-semibold text-sm tracking-wide">
+        Cloud · DevOps · Observability
+      </span>
+    </div>
+
+    {/* Title */}
+    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+      <span className="block text-white bg-gradient-to-b from-white to-gray-400 bg-clip-text text-transparent">
+        DevOps Micro Internship (DMI)
+      </span>
+
+      <span className="block mt-4 bg-gradient-to-r from-yellow-400 via-blue-400 to-purple-400 bg-clip-text text-transparent animate-pulse">
+        Learn Fast. Build Real. Go Production.
+      </span>
+    </h1>
+
+    {/* Subheading */}
+    <p className="text-xl max-w-2xl mx-auto text-gray-300 leading-relaxed">
+      12-Week Practical DevOps Internship — Hands-on, Project-oriented, Mentor-driven.
+    </p>
+
+    {/* Stats */}
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-14 max-w-3xl mx-auto">
+      <div className="text-center group">
+        <div className="text-4xl font-bold text-white group-hover:text-yellow-300 transition">
+          5k+
+        </div>
+        <p className="text-gray-400 text-sm">Learners trained</p>
+      </div>
+
+      <div className="text-center group">
+        <div className="text-4xl font-bold text-white group-hover:text-blue-300 transition">
+          50+
+        </div>
+        <p className="text-gray-400 text-sm">Projects delivered</p>
+      </div>
+
+      <div className="text-center group">
+        <div className="text-4xl font-bold text-white group-hover:text-green-300 transition">
+          15+
+        </div>
+        <p className="text-gray-400 text-sm">Years experience</p>
+      </div>
+
+      <div className="text-center group">
+        <div className="text-4xl font-bold text-white group-hover:text-purple-300 transition">
+          98%
+        </div>
+        <p className="text-gray-400 text-sm">Satisfaction rate</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* HIGHLIGHTS SECTION */}
 <section className="py-20 bg-white text-black">
