@@ -63,7 +63,7 @@ export default function Courses() {
       {/* Courses Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
         {courses.map((c, index) => (
-         <div
+       <div
   key={index}
   className="
     bg-white border border-gray-200 p-4 rounded-xl shadow-lg animate-fadeInUp
@@ -72,11 +72,13 @@ export default function Courses() {
   "
 >
   {/* IMAGE */}
-  <img
-    src={c.img}
-    className="rounded-lg mb-3 w-full h-[150px] object-cover border border-gray-300"
-    alt={c.title}
-  />
+  <div className="w-full h-[180px] overflow-hidden rounded-lg mb-3">
+    <img
+      src={c.img}
+      alt={c.title}
+      className="w-full h-full object-cover"
+    />
+  </div>
 
   {/* TITLE */}
   <h3 className="text-lg font-semibold text-[#0a0f1f] mb-2 text-center h-[50px]">
@@ -84,14 +86,10 @@ export default function Courses() {
   </h3>
 
   {/* DURATION */}
-  <p className="text-gray-600 text-sm">
-    Duration: {c.duration}
-  </p>
+  <p className="text-gray-600 text-sm">Duration: {c.duration}</p>
 
   {/* PRICE */}
-  <p className="text-yellow-500 font-bold text-sm mt-1">
-    {c.price}
-  </p>
+  <p className="text-yellow-500 font-bold text-sm mt-1">{c.price}</p>
 
   {/* STATUS BADGE */}
   <span
@@ -121,6 +119,7 @@ export default function Courses() {
     Enroll Now →
   </a>
 </div>
+
 
         ))}
       </div>
