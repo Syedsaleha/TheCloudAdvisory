@@ -22,7 +22,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div>
-              <span className="text-yellow-400 font-semibold text-sm tracking-wider uppercase">About Us</span>
+              <span className="text-yellow-400 font-semibold text-sm tracking-wider uppercase">About Me</span>
               <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black">
                 Led by <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-500">Pravin Mishra</span>
               </h2>
