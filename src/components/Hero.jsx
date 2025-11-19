@@ -1,61 +1,49 @@
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
+  const scrollToContact = () => {
+    const el = document.getElementById("contact");
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="home"
       className="
         relative min-h-screen w-full 
-        bg-black text-white flex items-center
+        flex items-center
+        bg-cover bg-center bg-no-repeat
       "
       style={{
-      backgroundImage: "url('https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg')",
-// put your hero background image here
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundImage:
+          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')", // ⭐ Replace with your image
       }}
     >
-      {/* Overlay */}
+      {/* DARK OVERLAY FOR READABILITY */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* Content Wrapper */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      {/* CONTENT */}
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center sm:text-left space-y-8">
+        
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+          Transform Your Cloud Journey
+        </h1>
 
-          {/* LEFT CONTENT */}
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-6xl font-light leading-tight">
-              <span className="block">awareness is</span>
-              <span className="block font-bold">everything</span>
-            </h1>
+        <p className="text-xl md:text-2xl text-gray-200 max-w-2xl">
+          Expert courses, books, and consulting to elevate your DevOps career.
+        </p>
 
-            <p className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
-              Make sure all the choices you make in life come from a point of
-              awareness and not ignorance.
-            </p>
-
-            <button
-              className="
-                mt-4 inline-flex items-center space-x-2 
-                bg-white text-black px-6 py-3 rounded-full font-semibold
-                hover:bg-gray-200 transition
-              "
-            >
-              <span>Explore More</span>
-              <ArrowRight size={18} />
-            </button>
-          </div>
-
-          {/* RIGHT SIDE IMAGE */}
-          <div className="hidden lg:flex justify-center">
-            <img
-              src="https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg"
-              alt="Person"
-              className="w-[480px] h-auto object-cover rounded-xl shadow-2xl opacity-90"
-            />
-          </div>
-
-        </div>
+        <button
+          onClick={scrollToContact}
+          className="
+            bg-yellow-400 text-black px-8 py-4 rounded-xl font-semibold 
+            hover:bg-yellow-500 transition shadow-lg flex items-center 
+            justify-center gap-2 mx-auto sm:mx-0
+          "
+        >
+          Get Started
+          <ArrowRight size={20} />
+        </button>
       </div>
     </section>
   );
