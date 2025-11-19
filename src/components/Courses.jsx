@@ -55,9 +55,11 @@ export default function Courses() {
             />
 
           {/* TITLE */}
-<h3 className="text-xl font-semibold text-[#0a0f1f] mb-4 h-[60px]">
+{/* TITLE */}
+<h3 className="text-xl font-semibold text-[#0a0f1f] mb-4 text-center h-[60px]">
   {c.title}
 </h3>
+
 
 {/* CENTERED INFO */}
 <div className="text-center space-y-1 mb-4">
