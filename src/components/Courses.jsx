@@ -25,12 +25,12 @@ export default function Courses() {
       link: "https://www.udemy.com/course/aws-fundamentals-amazon-web-services-for-beginners/?couponCode=CP251118BG1",
     },
     {
-      title: "AWS DevOps & CI/CD with AWS CodePipeline for Engineers",
-      duration: "15 hours",
-      price: "₹659",
+      title: "Git & GitHub for Absolute Beginners with Project",
+      duration: "2.5 hours",
+      price: "₹399",
       status: "Live",
-      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/193967/1718612700859Course_Thumbnail__1__lyst1718612700913.png?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/mastering-aws-devops-for-cloud-engineers/?couponCode=PMNVD2025",
+      img: "https://img-c.udemycdn.com/course/480x270/5536474_9535_5.jpg",
+      link: "https://www.udemy.com/course/git-and-github-for-beginners-start-coding-collaboratively/?couponCode=CP251118BG1",
     },
     {
       title: "Linux for DevOps, Cloud, and SRE Engineers",
