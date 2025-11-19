@@ -28,7 +28,7 @@ export default function Navigation() {
        {/* Logo */}
 <div className="flex items-center">
   <img
-    src="/your-logo1.png"
+    src="/your-logo.png"
     alt="Logo"
     className="h-20 w-auto object-contain"
   />
