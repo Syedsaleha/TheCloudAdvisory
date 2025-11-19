@@ -12,9 +12,9 @@ export default function Courses() {
       title: "Linux for DevOps, Cloud, and SRE Engineers",
       duration: "5 hours",
       price: "₹629",
-      status: "Upcoming",
-      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=PMNVD2025",
+      status: "Live",
+      img: "	https://img-c.udemycdn.com/course/480x270/5403140_ce56_12.jpg",
+      link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=CP251118BG1",
     },
     {
       title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
