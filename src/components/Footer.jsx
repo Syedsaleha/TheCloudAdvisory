@@ -123,7 +123,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} TheCloudAdvisory. All rights reserved.
+              © {currentYear} Pravin Mishra. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm">
               Crafted with <span className="text-yellow-400">cloud</span> excellence by Pravin Mishra
