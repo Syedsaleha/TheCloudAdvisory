@@ -9,9 +9,10 @@ export default function Hero() {
   return (
     <section
       id="home"
+      data-aos="fade"   // ← fixed (no movement)
+      data-aos-duration="1000"
       className="
-        relative w-full 
-        min-h-screen 
+        relative w-full min-h-screen 
         flex items-center justify-center
         bg-black
         bg-no-repeat bg-center bg-contain
@@ -27,7 +28,7 @@ export default function Hero() {
 
       {/* CONTENT */}
       <div className="relative z-10 px-6 text-center max-w-3xl space-y-6">
-        
+
         <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
           Transform Your Cloud Journey
         </h1>
