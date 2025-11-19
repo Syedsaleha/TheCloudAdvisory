@@ -48,6 +48,31 @@ export default function Courses() {
       img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
       link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
     },
+        {
+      title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
+      duration: "43.5 hours",
+      price: "₹569",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
+      link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
+    },
+        {
+      title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
+      duration: "43.5 hours",
+      price: "₹569",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
+      link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
+    },
+        {
+      title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
+      duration: "43.5 hours",
+      price: "₹569",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
+      link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
+    },
+    
   ];
 
   return (
