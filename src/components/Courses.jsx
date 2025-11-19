@@ -11,7 +11,7 @@ export default function Courses() {
     {
       title: "Linux for DevOps, Cloud, and SRE Engineers",
       duration: "5 hours",
-      price: "₹629",
+      price: "₹399",
       status: "Live",
       img: "	https://img-c.udemycdn.com/course/480x270/5403140_ce56_12.jpg",
       link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=CP251118BG1",
