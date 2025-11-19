@@ -15,14 +15,14 @@ export default function Hero() {
         bg-cover bg-center bg-no-repeat
       "
       style={{
-        backgroundImage:
-          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')", // ⭐ Replace with your image
+        backgroundImage: "url('your-bg-img.jpg')", // Replace here
+        backgroundPosition: "center center", // ⭐ Force perfect center
       }}
     >
-      {/* DARK OVERLAY FOR READABILITY */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* CONTENT */}
+      {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center sm:text-left space-y-8">
         
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
