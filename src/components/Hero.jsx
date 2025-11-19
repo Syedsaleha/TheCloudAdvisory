@@ -9,7 +9,7 @@ export default function Hero() {
         bg-black text-white flex items-center
       "
       style={{
-      backgroundImage: "url('https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg')"
+      backgroundImage: "url('https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg')",
 // put your hero background image here
         backgroundSize: "cover",
         backgroundPosition: "center",
