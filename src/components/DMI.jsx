@@ -168,6 +168,41 @@ const weeks = [
   </div>
 </section>
 
+{/* RULES & DELIVERABLES SECTION */}
+<section className="py-20 bg-white text-black">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+    {/* Rules */}
+    <div className="p-8 border rounded-2xl shadow-lg hover:shadow-2xl transition">
+      <h3 className="text-2xl font-bold mb-6">Rules & Expectations</h3>
+
+      <ul className="space-y-4 text-gray-700">
+        <li>• Attendance checks at start/mid/end</li>
+        <li>• Weekly LinkedIn progress post</li>
+        <li>• Missing 2+ deadlines = removal</li>
+        <li>• Active participation required</li>
+        <li>• Final capstone project demo</li>
+      </ul>
+    </div>
+
+    {/* Deliverables */}
+    <div className="p-8 border rounded-2xl shadow-lg hover:shadow-2xl transition">
+      <h3 className="text-2xl font-bold mb-6">What You'll Deliver</h3>
+
+      <div className="flex flex-wrap gap-3 text-gray-700">
+        <span className="px-4 py-2 rounded-full bg-gray-100 border">CI/CD Pipelines</span>
+        <span className="px-4 py-2 rounded-full bg-gray-100 border">AWS Deployments</span>
+        <span className="px-4 py-2 rounded-full bg-gray-100 border">Terraform Modules</span>
+        <span className="px-4 py-2 rounded-full bg-gray-100 border">Monitoring Dashboards</span>
+        <span className="px-4 py-2 rounded-full bg-gray-100 border">GitHub Profile Boost</span>
+        <span className="px-4 py-2 rounded-full bg-gray-100 border">Final Capstone</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
       
 {/* roadmap */}
 <section className="py-20 px-6 max-w-5xl mx-auto">
