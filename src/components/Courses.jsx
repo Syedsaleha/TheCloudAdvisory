@@ -3,10 +3,10 @@ export default function Courses() {
     {
       title: "AWS DevOps & CI/CD with AWS CodePipeline for Engineers",
       duration: "15 hours",
-      price: "₹659",
+      price: "₹409",
       status: "Live",
       img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/193967/1718612700859Course_Thumbnail__1__lyst1718612700913.png?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/mastering-aws-devops-for-cloud-engineers/?couponCode=PMNVD2025",
+      link: "https://www.udemy.com/course/mastering-aws-devops-for-cloud-engineers/?couponCode=CP251118BG1",
     },
     {
       title: "Linux for DevOps, Cloud, and SRE Engineers",
