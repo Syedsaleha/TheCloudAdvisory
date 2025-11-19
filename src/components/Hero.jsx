@@ -10,36 +10,34 @@ export default function Hero() {
     <section
       id="home"
       className="
-        relative w-full min-h-screen 
+        relative w-full 
+        min-h-[80vh] lg:h-[95vh]   /* FIXED VIEWPORT HEIGHT */
         flex items-center
-        bg-cover bg-center bg-no-repeat
         overflow-hidden
-        pt-24        /* Prevent overlap with fixed navbar */
+        pt-28                     /* offset for navbar */
+        bg-no-repeat
+        bg-top                    /* KEEP IMAGE IN SAME POSITION ALWAYS */
+        bg-[length:100%_auto]     /* FIT IMAGE CORRECTLY */
       "
       style={{
         backgroundImage:
           "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
-        backgroundPosition: "center center",
-        backgroundSize: "cover",
       }}
     >
-      {/* Dark overlay for better text visibility */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* CONTENT */}
+      {/* Content */}
       <div className="relative z-10 px-6 max-w-4xl mx-auto space-y-6">
         
-        {/* Heading */}
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-xl">
           Transform Your Cloud Journey
         </h1>
 
-        {/* Subtitle */}
         <p className="text-xl text-gray-200 max-w-xl drop-shadow-md">
           Expert courses, books, and consulting to elevate your DevOps career.
         </p>
 
-        {/* CTA Button */}
         <button
           onClick={scrollToContact}
           className="
