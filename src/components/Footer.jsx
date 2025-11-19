@@ -9,7 +9,12 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 
-             {/* Logo */}
+          {/* BRAND + DESCRIPTION */}
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center space-x-2">
+              <Cloud size={32} className="text-yellow-400" />
+
+                  {/* Logo */}
 <div className="flex items-center">
   <img
     src="/your-logo.png"
