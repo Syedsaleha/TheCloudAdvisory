@@ -11,17 +11,27 @@ export default function Hero() {
       id="home"
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="
-        relative min-h-screen 
-        bg-cover bg-center bg-no-repeat 
-        flex items-center pt-16
-      "
-      style={{
-        backgroundImage:
-          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
-      }}
+      className="relative min-h-screen flex items-center pt-16 overflow-hidden"
     >
-      {/* DARK OVERLAY */}
+      {/* 🔵 Blurred Fullscreen Background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center blur-xl opacity-40"
+        style={{
+          backgroundImage:
+            "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
+        }}
+      ></div>
+
+      {/* 🟡 Sharp Centered Foreground Image (No Crop) */}
+      <div
+        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+        style={{
+          backgroundImage:
+            "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
+        }}
+      ></div>
+
+      {/* DARK OVERLAY FOR READABILITY */}
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* FLOATING BLUR LIGHTS */}
@@ -136,7 +146,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* RIGHT SIDE REMOVED → background image used instead */}
+          {/* RIGHT SIDE REMOVED – Background image already covers */}
         </div>
       </div>
     </section>
