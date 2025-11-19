@@ -53,7 +53,7 @@ export default function Courses() {
   return (
     <section
       id="courses"
-      className="fade-up pt-12 pb-20 px-6 bg-white scroll-mt-20"
+      className="fade-up pt-15 pb-20 px-6 bg-white scroll-mt-20"
     >
       {/* Title */}
       <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-20">
