@@ -213,10 +213,12 @@ const weeks = [
     className="w-full h-[380px]"
     src="https://www.youtube.com/embed/qJD5UCdtjg4"
     title="DMI Intro Video"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     allowFullScreen
   ></iframe>
 </div>
+
 
 
   </div>
