@@ -49,7 +49,8 @@ export default function Hero() {
           {/* RIGHT SIDE IMAGE */}
           <div className="hidden lg:flex justify-center">
             <img
-              src="/your-right-image.jpg"
+              src="https://pravinmishra.in/wp-content/uploads/2023/02/AWS-CKP-1.jpg"
+"
               alt="Person"
               className="w-[480px] h-auto object-cover rounded-xl shadow-2xl opacity-90"
             />
