@@ -60,7 +60,7 @@ export default function About() {
 
           <div className="space-y-6">
             <div className="bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl p-8 border border-gray-800 shadow-2xl">
-              <h3 className="text-2xl font-bold text-white mb-6">Why Choose Us</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Why Choose Me</h3>
               <div className="space-y-4">
                 {highlights.map((highlight, index) => (
                   <div key={index} className="flex items-start space-x-3">
