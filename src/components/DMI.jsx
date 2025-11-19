@@ -121,43 +121,51 @@ const weeks = [
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
       </section>
 
-    
-{/* WEEK TIMELINE – MEDIUM SIZE */}
+{/* WEEK TIMELINE – RESPONSIVE */}
 <section className="py-20 px-6 max-w-5xl mx-auto">
   <h2 className="text-4xl font-bold text-center mb-16">14-Week DevOps Roadmap</h2>
 
   <div className="relative">
 
-    {/* Center Line */}
-    <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
+    {/* Center Line (visible only on md and above) */}
+    <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
 
     {weeks.map((w, i) => (
       <div
         key={i}
-        className={`mb-14 flex w-full ${
-          i % 2 === 0 ? "justify-start" : "justify-end"
-        }`}
+        className={`
+          mb-14 flex w-full 
+          ${i % 2 === 0 ? "md:justify-start" : "md:justify-end"} 
+          justify-center
+        `}
         data-aos="fade-up"
         data-aos-delay={i * 70}
       >
-        <div className="w-[50%] px-6 relative">
+        <div className="w-full md:w-[50%] px-4 sm:px-6 relative">
 
-          {/* Dot */}
+          {/* Dot - Center on mobile, left/right on desktop */}
           <div
-            className="absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md"
+            className="
+              absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md
+              md:block hidden
+            "
             style={{
               left: i % 2 === 0 ? "100%" : "0%",
-              transform: "translate(-50%, 0)",
+              transform: "translate(-50%, 0)"
             }}
           ></div>
 
+          {/* MOBILE DOT */}
+          <div className="md:hidden flex justify-center mb-3">
+            <div className="w-4 h-4 bg-yellow-400 border-2 border-white rounded-full shadow"></div>
+          </div>
+
           {/* Card */}
           <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-200">
-            <h3 className="text-2xl font-bold text-black mb-1">{w.week}</h3>
-            <p className="text-gray-700 text-base leading-relaxed">
-              {w.topic}
-            </p>
+            <h3 className="text-xl sm:text-2xl font-bold text-black mb-1">{w.week}</h3>
+            <p className="text-gray-700 text-base leading-relaxed">{w.topic}</p>
           </div>
+
         </div>
       </div>
     ))}
@@ -165,13 +173,14 @@ const weeks = [
     {/* FINAL ACHIEVEMENT CARD */}
     <div className="flex justify-center mt-20" data-aos="zoom-in">
       <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black 
-      p-6 rounded-2xl shadow-xl border border-yellow-600 text-center w-[70%]">
+      p-6 rounded-2xl shadow-xl border border-yellow-600 text-center w-full sm:w-[80%] md:w-[70%]">
         <h3 className="text-2xl font-bold">🎉 Congratulations!</h3>
         <p className="text-md mt-1 font-medium">
           You have completed the 14-Week DevOps Micro Internship Journey.
         </p>
       </div>
     </div>
+
   </div>
 </section>
 
