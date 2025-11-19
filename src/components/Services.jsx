@@ -71,7 +71,7 @@ export default function Services() {
         {/* HEADER */}
         <div className="text-center mb-16">
           <div className="inline-block">
-            <span className="text-yellow-400 font-semibold text-md tracking-wider uppercase">
+            <span className="text-yellow-400 font-semibold md:text-3xl tracking-wider uppercase">
                Services
             </span>
             <div className="h-1 bg-gradient-to-r from-yellow-400 to-blue-500 mt-2 rounded-full"></div>
