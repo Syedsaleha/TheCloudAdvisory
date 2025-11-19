@@ -72,13 +72,13 @@ export default function Services() {
         <div className="text-center mb-16">
           <div className="inline-block">
             <span className="text-yellow-400 font-semibold text-sm tracking-wider uppercase">
-              Our Services
+               Services
             </span>
             <div className="h-1 bg-gradient-to-r from-yellow-400 to-blue-500 mt-2 rounded-full"></div>
           </div>
 
           <h2 className="mt-4 text-4xl md:text-5xl font-bold text-black">
-            What We Offer
+            What I Offer
           </h2>
 
           <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
