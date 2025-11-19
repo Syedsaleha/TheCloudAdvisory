@@ -106,27 +106,30 @@ export default function Services() {
                   hover:-translate-y-2 hover:shadow-xl hover:border-yellow-400
                 "
               >
-                {/* Badge */}
-                <div className="absolute top-4 right-4">
-                  <span
-                    className={`text-xs font-semibold px-3 py-1 rounded-full ${
-                      service.color === "yellow"
-                        ? "bg-yellow-100 text-yellow-700"
-                        : "bg-blue-100 text-blue-700"
-                    }`}
-                  >
-                    {service.highlight}
-                  </span>
-                </div>
+        {/* Highlight Badge */}
+<div className="absolute top-4 right-4 z-20">
+  <span
+    className={`text-xs font-semibold px-3 py-1 rounded-full ${
+      service.color === "yellow"
+        ? "bg-yellow-100 text-yellow-700"
+        : "bg-blue-100 text-blue-700"
+    }`}
+  >
+    {service.highlight}
+  </span>
+</div>
 
-                {/* Icon */}
-                <div
-                  className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${
-                    colorClasses[service.color]
-                  } mb-6 group-hover:scale-110 transition-transform duration-300`}
-                >
-                  <Icon size={32} className="text-white" />
-                </div>
+{/* Icon */}
+<div
+  className={`
+    inline-flex p-4 rounded-2xl bg-gradient-to-br ${colorClasses[service.color]}
+    mb-6 transition-transform duration-300
+    group-hover:scale-105 relative z-10
+  `}
+>
+  <Icon size={32} className="text-white" />
+</div>
+
 
                 {/* Title */}
                 <h3 className="text-2xl font-bold text-black mb-4">
