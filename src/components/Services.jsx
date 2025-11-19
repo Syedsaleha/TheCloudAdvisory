@@ -46,7 +46,6 @@ const services = [
     color: "blue",
     highlight: "Enterprise Grade",
   },
-  // ⭐ NEW DMI SERVICE
   {
     icon: Cloud,
     title: "DevOps Micro Internship (DMI)",
@@ -68,7 +67,8 @@ export default function Services() {
   return (
     <section id="services" className="fade-up py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+
+        {/* HEADER */}
         <div className="text-center mb-16">
           <div className="inline-block">
             <span className="text-yellow-400 font-semibold text-sm tracking-wider uppercase">
@@ -82,15 +82,15 @@ export default function Services() {
           </h2>
 
           <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-            Comprehensive solutions to accelerate your cloud and DevOps
-            transformation
+            Comprehensive solutions to accelerate your cloud and DevOps transformation
           </p>
         </div>
 
-        {/* Cards Grid */}
+        {/* GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {services.map((service, index) => {
             const Icon = service.icon;
+
             const colorClasses = {
               yellow: "from-yellow-400 to-yellow-500",
               blue: "from-blue-500 to-blue-600",
@@ -99,11 +99,14 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8
-                           hover:border-gray-300 transition-all duration-300 hover:shadow-2xl
-                           h-full flex flex-col"
+                className="
+                  group relative bg-white border-2 border-gray-200 rounded-2xl p-8
+                  h-full flex flex-col justify-between
+                  transition-all duration-300
+                  hover:-translate-y-2 hover:shadow-xl hover:border-yellow-400
+                "
               >
-                {/* Highlight Badge */}
+                {/* Badge */}
                 <div className="absolute top-4 right-4">
                   <span
                     className={`text-xs font-semibold px-3 py-1 rounded-full ${
@@ -148,18 +151,18 @@ export default function Services() {
                           }`}
                         ></div>
                       </div>
-                      <span className="ml-3 text-gray-700 text-sm">
-                        {feature}
-                      </span>
+                      <span className="ml-3 text-gray-700 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 {/* Button */}
                 <button
-                  className="group/btn mt-auto w-full flex items-center justify-center space-x-2
-                             bg-black text-white py-3 rounded-lg font-semibold
-                             hover:bg-gray-900 transition-all duration-200"
+                  className="
+                    group/btn mt-auto w-full flex items-center justify-center space-x-2
+                    bg-black text-white py-3 rounded-lg font-semibold
+                    hover:bg-gray-900 transition-all duration-200
+                  "
                 >
                   <span>Learn More</span>
                   <ArrowRight
