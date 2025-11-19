@@ -1,4 +1,4 @@
-import { BookOpen, Cloud, Users, ArrowRight } from "lucide-react";
+import { BookOpen, Cloud, Users, Infinity } from "lucide-react";
 
 const services = [
   {
