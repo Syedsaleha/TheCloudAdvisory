@@ -63,61 +63,65 @@ export default function Courses() {
       {/* Courses Grid */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
         {courses.map((c, index) => (
-          <div
-            key={index}
-            className="
-              bg-white border border-gray-200 rounded-2xl shadow-xl 
-              hover:scale-105 hover:shadow-2xl transition-all duration-500 
-              flex flex-col p-6
-            "
-          >
-            {/* IMAGE */}
-            <img
-              src={c.img}
-              className="rounded-lg w-full border border-gray-300 mb-4"
-              alt={c.title}
-            />
+         <div
+  key={index}
+  className="
+    bg-white border border-gray-200 p-4 rounded-xl shadow-lg animate-fadeInUp
+    hover:scale-[1.02] hover:shadow-[0_0_15px_rgba(0,0,0,0.3)]
+    transition-all duration-500 text-center max-w-sm mx-auto
+  "
+>
+  {/* IMAGE */}
+  <img
+    src={c.img}
+    className="rounded-lg mb-3 w-full h-[150px] object-cover border border-gray-300"
+    alt={c.title}
+  />
 
-          {/* TITLE */}
-{/* TITLE */}
-<h3 className="text-xl font-semibold text-[#0a0f1f] mb-4 text-center h-[60px]">
-  {c.title}
-</h3>
+  {/* TITLE */}
+  <h3 className="text-lg font-semibold text-[#0a0f1f] mb-2 text-center h-[50px]">
+    {c.title}
+  </h3>
 
+  {/* DURATION */}
+  <p className="text-gray-600 text-sm">
+    Duration: {c.duration}
+  </p>
 
-{/* CENTERED INFO */}
-<div className="text-center space-y-1 mb-4">
-  <p className="text-gray-600">Duration: {c.duration}</p>
-  <p className="text-yellow-500 font-bold">{c.price}</p>
+  {/* PRICE */}
+  <p className="text-yellow-500 font-bold text-sm mt-1">
+    {c.price}
+  </p>
 
   {/* STATUS BADGE */}
   <span
     className={`
-      inline-block px-3 py-1 rounded-full text-sm text-white
-      ${c.status === "Live" ? "bg-green-600" : ""}
-      ${c.status === "Upcoming" ? "bg-blue-600" : ""}
-      ${c.status === "Completed" ? "bg-gray-600" : ""}
+      inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold text-white
+      ${c.status === "Live"
+        ? "bg-green-600"
+        : c.status === "Upcoming"
+        ? "bg-blue-600"
+        : "bg-gray-600"
+      }
     `}
   >
     {c.status}
   </span>
+
+  {/* ENROLL BUTTON */}
+  <a
+    href={c.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="
+      mt-4 w-full block bg-yellow-400 text-black py-2 rounded-md
+      font-semibold hover:bg-yellow-500 transition text-sm
+    "
+  >
+    Enroll Now →
+  </a>
 </div>
 
-
-            {/* Spacer to push button bottom */}
-            <div className="flex-grow"></div>
-
-            {/* ENROLL BUTTON */}
-            <a
-              href={c.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 w-full block bg-yellow-400 text-black py-2 text-center
-                         rounded-lg font-semibold hover:bg-yellow-500 transition"
-            >
-              Enroll Now →
-            </a>
-          </div>
         ))}
       </div>
     </section>
