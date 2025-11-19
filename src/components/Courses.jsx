@@ -24,6 +24,30 @@ export default function Courses() {
       img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
       link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
     },
+    {
+      title: "AWS DevOps & CI/CD with AWS CodePipeline for Engineers",
+      duration: "15 hours",
+      price: "₹659",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/193967/1718612700859Course_Thumbnail__1__lyst1718612700913.png?w=805&h=453&resizetype=fill",
+      link: "https://www.udemy.com/course/mastering-aws-devops-for-cloud-engineers/?couponCode=PMNVD2025",
+    },
+    {
+      title: "Linux for DevOps, Cloud, and SRE Engineers",
+      duration: "5 hours",
+      price: "₹629",
+      status: "Upcoming",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184709/1709132099330Screenshot_2024_02_28_at_45430_PMpng_lyst6350.png?w=805&h=453&resizetype=fill",
+      link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=PMNVD2025",
+    },
+    {
+      title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
+      duration: "43.5 hours",
+      price: "₹569",
+      status: "Live",
+      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
+      link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
+    },
   ];
 
   return (
