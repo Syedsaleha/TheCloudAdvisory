@@ -30,7 +30,7 @@ export default function Navigation() {
   <img
     src="/your-logo1.png"
     alt="Logo"
-    className="h-12 w-auto object-contain"
+    className="h-16 w-auto object-contain"
   />
 </div>
 
