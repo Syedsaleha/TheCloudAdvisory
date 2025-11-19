@@ -15,7 +15,7 @@ export default function Hero() {
         bg-cover bg-center bg-no-repeat
       "
       style={{
-        backgroundImage: "url('your-bg-img.jpg')", // Replace here
+        backgroundImage: "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')", // Replace here
         backgroundPosition: "center center", // ⭐ Force perfect center
       }}
     >
