@@ -19,7 +19,7 @@ export default function Hero() {
       "
       style={{
         backgroundImage:
-          "url('/mnt/data/Champion-of-the-week.png')",
+          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
       }}
     >
       {/* Dark Overlay */}
