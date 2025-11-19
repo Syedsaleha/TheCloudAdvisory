@@ -11,8 +11,7 @@ export default function Footer() {
 
           {/* BRAND + DESCRIPTION */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2">
-              <Cloud size={32} className="text-yellow-400" />
+           
 
                   {/* Logo */}
 <div className="flex items-center">
@@ -22,7 +21,6 @@ export default function Footer() {
     className="h-20 w-auto object-contain"
   />
 </div>
-            </div>
 
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md mt-4">
               Empowering individuals and organizations with cutting-edge Cloud and DevOps expertise
