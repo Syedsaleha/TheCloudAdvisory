@@ -9,7 +9,9 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
 
-              {/* Logo */}
+          {/* BRAND + DESCRIPTION */}
+          <div className="col-span-1 md:col-span-2">
+                {/* Logo */}
 <div className="flex items-center">
   <img
     src="/your-logo.png"
@@ -17,6 +19,7 @@ export default function Footer() {
     className="h-20 w-auto object-contain"
   />
 </div>
+            </div>
 
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md mt-4">
               Empowering individuals and organizations with cutting-edge Cloud and DevOps expertise
