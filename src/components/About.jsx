@@ -29,13 +29,22 @@ export default function About() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-             Pravin Mishra is a seasoned cloud architect, consultant, and software developer with a passion for cloud computing, DevOps, and cybersecurity. As an AWS Certified Solutions Architect Professional, AWS Authorized Instructor, and Azure Certified Solutions Architect Expert, Pravin possesses a deep understanding of cloud infrastructure design, migration, and optimization on AWS and Azure. With extensive experience in designing and implementing secure, scalable, and efficient cloud architectures, Pravin has helped numerous businesses achieve their cloud goals.
+          Pravin Mishra is a Cloud Architect, DevOps Consultant, and AWS Authorized Instructor with deep expertise in cloud computing, automation, and modern infrastructure design. He holds multiple industry-leading certifications including AWS Solutions Architect – Professional and Azure Solutions Architect Expert.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-             As a cloud expert, Pravin is dedicated to sharing his knowledge and expertise with others, helping them to succeed in the rapidly evolving cloud landscape. When not working, Pravin enjoys exploring new technologies, reading about innovation, and traveling to new destinations
+             With years of experience designing secure, scalable, and cost-efficient architectures on AWS and Azure, Pravin has helped startups and enterprises transform their cloud strategy through automation, DevOps adoption, and best-practice engineering.
+            </p>
+            
+  <p className="text-lg text-gray-700 leading-relaxed">
+             As an educator and mentor, he has trained thousands of students through books, courses, and real-world project guidance — helping them build strong careers in Cloud & DevOps.
             </p>
 
+              </p>
+  <p className="text-lg text-gray-700 leading-relaxed">
+             When not engineering solutions, Pravin enjoys exploring new technologies, reading, and travelling to new places.
+            </p>
+            
             <div className="grid grid-cols-3 gap-4 py-8">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
