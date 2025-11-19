@@ -1,4 +1,4 @@
-import { Cloud, Linkedin, Twitter, Github, Mail, Instagram } from 'lucide-react';
+import { Linkedin, Twitter, Github, Mail, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,14 +11,15 @@ export default function Footer() {
 
           {/* BRAND + DESCRIPTION */}
           <div className="col-span-1 md:col-span-2">
-                  {/* Logo */}
-<div className="flex items-center">
-  <img
-    src="/your-logo.png"
-    alt="Logo"
-    className="h-20 w-auto object-contain"
-  />
-</div>
+            
+            {/* Logo */}
+            <div className="flex items-center">
+              <img
+                src="/your-logo.png"
+                alt="Logo"
+                className="h-20 w-auto object-contain"
+              />
+            </div>
 
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md mt-4">
               Empowering individuals and organizations with cutting-edge Cloud and DevOps expertise
@@ -27,22 +28,23 @@ export default function Footer() {
 
             {/* SOCIAL ICONS */}
             <div className="flex space-x-4">
-
-         {/* LinkedIn */}
-<a
-  href="https://www.linkedin.com/in/pravin-mishra-aws-trainer/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
-             hover:bg-yellow-400 hover:text-black transition-all duration-200"
->
-  <Linkedin size={20} />
-</a>
-
-
-              {/* Twitter */}
+              
+              {/* LinkedIn */}
               <a
-                href="#"
+                href="https://www.linkedin.com/in/pravin-mishra-aws-trainer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
+                           hover:bg-yellow-400 hover:text-black transition-all duration-200"
+              >
+                <Linkedin size={20} />
+              </a>
+
+              {/* Twitter / X */}
+              <a
+                href="https://x.com/pravinmishra88"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
                            hover:bg-yellow-400 hover:text-black transition-all duration-200"
               >
@@ -51,44 +53,53 @@ export default function Footer() {
 
               {/* GitHub */}
               <a
-                href="#"
+                href="https://github.com/pravinmishraaws"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
                            hover:bg-yellow-400 hover:text-black transition-all duration-200"
               >
                 <Github size={20} />
               </a>
 
-              {/* Email */}
+              {/* Instagram */}
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
-                           hover:bg-yellow-400 hover:text-black transition-all duration-200"
-              >
-                <Mail size={20} />
-              </a>
-
-              {/* INSTAGRAM */}
-              <a
-                href="#"
+                href="https://www.instagram.com/awspravinmishra/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
                            hover:bg-yellow-400 hover:text-black transition-all duration-200"
               >
                 <Instagram size={20} />
               </a>
 
-              {/* UDEMY - custom SVG icon */}
+              {/* YouTube */}
               <a
-                href="#"
+                href="https://www.youtube.com/results?search_query=pravin+mishra"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
                            hover:bg-yellow-400 hover:text-black transition-all duration-200"
               >
+                <Youtube size={22} />
+              </a>
+
+              {/* UDEMY */}
+              <a
+                href="https://www.udemy.com/user/pravin-mishra-30/?kw=prav&src=sac"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-gray-900 rounded-lg flex items-center justify-center
+                           hover:bg-yellow-400 hover:text-black transition-all duration-200"
+              >
+                {/* Udemy SVG */}
                 <svg
                   width="22"
                   height="22"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 256 256"
                   fill="currentColor"
                 >
-                  <path d="M12 2L3 7l9 5 9-5-9-5zm9 7l-9 5-9-5v6l9 5 9-5V9z" />
+                  <path d="M128 24L16 88l112 64 112-64L128 24zm112 88l-112 64L16 112v80l112 64 112-64v-80z"/>
                 </svg>
               </a>
 
