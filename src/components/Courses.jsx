@@ -61,7 +61,8 @@ export default function Courses() {
       </h2>
 
       {/* Courses Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
         {courses.map((c, index) => (
        <div
   key={index}
