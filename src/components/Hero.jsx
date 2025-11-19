@@ -1,152 +1,60 @@
-import { Cloud, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
-  const scrollToContact = () => {
-    const el = document.getElementById("contact");
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section
       id="home"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-      className="relative min-h-screen flex items-center pt-16 overflow-hidden"
+      className="
+        relative min-h-screen w-full 
+        bg-black text-white flex items-center
+      "
+      style={{
+        backgroundImage:
+          "url('/your-bg-image.jpg')", // put your hero background image here
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
-      {/* 🔵 Blurred Fullscreen Background */}
-      <div
-        className="absolute inset-0 bg-cover bg-center blur-xl opacity-40"
-        style={{
-          backgroundImage:
-            "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
-        }}
-      ></div>
-
-      {/* 🟡 Sharp Centered Foreground Image (No Crop) */}
-      <div
-        className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
-        }}
-      ></div>
-
-      {/* DARK OVERLAY FOR READABILITY */}
+      {/* Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
 
-      {/* FLOATING BLUR LIGHTS */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div
-          className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl"
-          data-aos="zoom-in"
-        ></div>
-        <div
-          className="absolute top-1/2 -left-40 w-80 h-80 bg-yellow-400/20 rounded-full blur-3xl"
-          data-aos="zoom-in"
-          data-aos-delay="200"
-        ></div>
-      </div>
-
-      {/* CONTENT */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Content Wrapper */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
 
           {/* LEFT CONTENT */}
-          <div className="space-y-8">
-
-            {/* Badge */}
-            <div
-              className="inline-flex items-center space-x-2 
-              bg-yellow-400/10 border border-yellow-400/20 
-              rounded-full px-4 py-2 backdrop-blur-md"
-              data-aos="fade-right"
-              data-aos-delay="200"
-            >
-              <Cloud size={16} className="text-yellow-400" />
-              <span className="text-yellow-400 text-sm font-medium">
-                Cloud & DevOps Experts
-              </span>
-            </div>
-
-            {/* Heading */}
-            <h1
-              className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-white"
-              data-aos="fade-right"
-              data-aos-delay="350"
-            >
-              Transform Your
-              <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-blue-500">
-                Cloud Journey
-              </span>
+          <div className="space-y-6">
+            <h1 className="text-5xl md:text-6xl font-light leading-tight">
+              <span className="block">awareness is</span>
+              <span className="block font-bold">everything</span>
             </h1>
 
-            {/* Subtitle */}
-            <p
-              className="text-xl text-gray-300 leading-relaxed max-w-xl"
-              data-aos="fade-right"
-              data-aos-delay="500"
-            >
-              Expert courses, insightful books, and strategic consulting services
-              to elevate your Cloud and DevOps capabilities.
+            <p className="text-lg md:text-xl text-gray-200 max-w-xl leading-relaxed">
+              Make sure all the choices you make in life come from a point of
+              awareness and not ignorance.
             </p>
 
-            {/* BUTTONS */}
-            <div
-              className="flex flex-col sm:flex-row gap-4"
-              data-aos="fade-right"
-              data-aos-delay="650"
+            <button
+              className="
+                mt-4 inline-flex items-center space-x-2 
+                bg-white text-black px-6 py-3 rounded-full font-semibold
+                hover:bg-gray-200 transition
+              "
             >
-              <button
-                onClick={scrollToContact}
-                className="group bg-yellow-400 text-black px-8 py-4 rounded-lg font-semibold 
-                hover:bg-yellow-500 transition-all duration-200 
-                hover:shadow-lg hover:shadow-yellow-400/50 flex items-center justify-center space-x-2"
-              >
-                <span>Get Started</span>
-                <ArrowRight
-                  size={20}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </button>
-
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("services")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="border-2 border-gray-300 text-white px-8 py-4 rounded-lg font-semibold
-                hover:border-yellow-400 hover:text-yellow-400 transition-all duration-200"
-              >
-                Explore Services
-              </button>
-            </div>
-
-            {/* Stats */}
-            <div
-              className="flex items-center space-x-8 pt-8"
-              data-aos="fade-up"
-              data-aos-delay="800"
-            >
-              <div className="border-l-2 border-yellow-400 pl-4">
-                <div className="text-3xl font-bold text-white">5000+</div>
-                <div className="text-gray-300 text-sm">Students Trained</div>
-              </div>
-
-              <div className="border-l-2 border-blue-500 pl-4">
-                <div className="text-3xl font-bold text-white">50+</div>
-                <div className="text-gray-300 text-sm">Projects Delivered</div>
-              </div>
-
-              <div className="border-l-2 border-yellow-400 pl-4">
-                <div className="text-3xl font-bold text-white">15+</div>
-                <div className="text-gray-300 text-sm">Years Experience</div>
-              </div>
-            </div>
+              <span>Explore More</span>
+              <ArrowRight size={18} />
+            </button>
           </div>
 
-          {/* RIGHT SIDE REMOVED – Background image already covers */}
+          {/* RIGHT SIDE IMAGE */}
+          <div className="hidden lg:flex justify-center">
+            <img
+              src="/your-right-image.jpg"
+              alt="Person"
+              className="w-[480px] h-auto object-cover rounded-xl shadow-2xl opacity-90"
+            />
+          </div>
+
         </div>
       </div>
     </section>
