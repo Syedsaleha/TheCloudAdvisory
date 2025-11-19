@@ -47,7 +47,7 @@ const services = [
     highlight: "Enterprise Grade",
   },
   {
-    icon: Cloud,
+    icon: Infinity,
     title: "DevOps Micro Internship (DMI)",
     description:
       "A 12-week practical DevOps Internship with real-time projects, mentorship, and complete DevOps lifecycle experience.",
