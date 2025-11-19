@@ -40,7 +40,6 @@ export default function About() {
              As an educator and mentor, he has trained thousands of students through books, courses, and real-world project guidance — helping them build strong careers in Cloud & DevOps.
             </p>
 
-              </p>
   <p className="text-lg text-gray-700 leading-relaxed">
              When not engineering solutions, Pravin enjoys exploring new technologies, reading, and travelling to new places.
             </p>
