@@ -138,32 +138,36 @@ const weeks = [
 
     {weeks.map((w, i) => (
       <div key={i}>
-        
+
         {/* --------------------------------------------------- */}
-        {/* 📱 MOBILE LAYOUT – LEFT TIMELINE PATTERN           */}
+        {/* 📱 MOBILE - CLEAN CARD STYLE (NO DOTS, NO LINES)     */}
         {/* --------------------------------------------------- */}
         <div 
-          className="md:hidden flex mb-10 relative"
+          className="md:hidden mb-6"
           data-aos="fade-up"
           data-aos-delay={i * 70}
         >
-          {/* Vertical line (left) */}
-          <div className="flex flex-col items-center mr-4">
-            <div className="w-1 bg-yellow-400 h-full absolute left-3 top-0"></div>
+          <div className="
+            bg-white p-5 rounded-xl shadow-md border border-gray-200 
+            relative overflow-hidden
+          ">
+            {/* Left Highlight Bar */}
+            <span className="
+              absolute left-0 top-0 h-full w-2 
+              bg-gradient-to-b from-yellow-400 to-yellow-500
+            "></span>
 
-            {/* Dot */}
-            <div className="relative z-10 w-4 h-4 bg-yellow-400 border-2 border-white rounded-full shadow"></div>
-          </div>
-
-          {/* Card */}
-          <div className="bg-white p-5 rounded-xl shadow-md border border-gray-200 w-full">
-            <h3 className="text-xl font-semibold mb-1">{w.week}</h3>
-            <p className="text-gray-700 text-sm leading-relaxed">{w.topic}</p>
+            <h3 className="text-xl font-semibold mb-1 text-black">
+              {w.week}
+            </h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              {w.topic}
+            </p>
           </div>
         </div>
 
         {/* --------------------------------------------------- */}
-        {/* 💻 DESKTOP LAYOUT – LEFT/RIGHT ALTERNATING         */}
+        {/* 💻 DESKTOP – ALTERNATING TIMELINE WITH DOTS         */}
         {/* --------------------------------------------------- */}
         <div
           className={`
@@ -175,7 +179,7 @@ const weeks = [
         >
           <div className="w-[50%] px-6 relative">
 
-            {/* Dot (desktop only) */}
+            {/* Dot */}
             <div
               className="absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md"
               style={{
@@ -186,7 +190,9 @@ const weeks = [
 
             {/* Card */}
             <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition border border-gray-200">
-              <h3 className="text-2xl font-bold text-black mb-1">{w.week}</h3>
+              <h3 className="text-2xl font-bold text-black mb-1">
+                {w.week}
+              </h3>
               <p className="text-gray-700 text-base leading-relaxed">
                 {w.topic}
               </p>
@@ -197,7 +203,7 @@ const weeks = [
       </div>
     ))}
 
-    {/* FINAL ACHIEVEMENT CARD */}
+    {/* END CARD */}
     <div className="flex justify-center mt-20" data-aos="zoom-in">
       <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black 
       p-6 rounded-2xl shadow-xl border border-yellow-600 text-center w-full sm:w-[80%] md:w-[70%]">
