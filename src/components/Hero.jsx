@@ -19,7 +19,7 @@ export default function Hero() {
       "
       style={{
         backgroundImage:
-          "url('https://cloudadvisory.mhosen.com/images/Champion-of-the-week.png')",
+          "url('public/Champion-of-the-week.png')",
         backgroundPosition: "center",
         backgroundSize: "cover",       // 🔥 full image always visible
       }}
