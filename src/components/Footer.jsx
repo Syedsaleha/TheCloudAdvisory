@@ -14,12 +14,14 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <Cloud size={32} className="text-yellow-400" />
 
-              {/* FIXED BRAND NAME */}
-              <h2 className="text-2xl font-bold flex items-center">
-                <span className="text-white">TheCloud</span>
-                <span className="text-yellow-400">Advisory</span>
-              </h2>
-            </div>
+                  {/* Logo */}
+<div className="flex items-center">
+  <img
+    src="/your-logo.png"
+    alt="Logo"
+    className="h-20 w-auto object-contain"
+  />
+</div>
 
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md mt-4">
               Empowering individuals and organizations with cutting-edge Cloud and DevOps expertise
