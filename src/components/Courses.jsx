@@ -17,12 +17,12 @@ export default function Courses() {
       link: "https://www.udemy.com/course/linux-for-cloud-engineers-a-complete-project-based-learning/?couponCode=CP251118BG1",
     },
     {
-      title: "DevOps for Beginners: Docker, K8s, Cloud, CI/CD & 4 Projects",
-      duration: "43.5 hours",
-      price: "₹569",
+      title: "AWS Fundamentals with 2 Projects: Cloud for Beginners [2025]",
+      duration: "22.5 hours",
+      price: "₹399",
       status: "Live",
-      img: "https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/165134/courses/184853/1709122169431e3otu_980_6_lyst6257.webp?w=805&h=453&resizetype=fill",
-      link: "https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/?couponCode=PMNVD2025",
+      img: "	https://img-c.udemycdn.com/course/480x270/4707588_697e_18.jpg",
+      link: "https://www.udemy.com/course/aws-fundamentals-amazon-web-services-for-beginners/?couponCode=CP251118BG1",
     },
     {
       title: "AWS DevOps & CI/CD with AWS CodePipeline for Engineers",
