@@ -120,8 +120,6 @@ const weeks = [
         <div className="absolute top-10 left-10 w-40 h-40 bg-yellow-500 blur-3xl opacity-20 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-52 h-52 bg-blue-500 blur-3xl opacity-20 rounded-full"></div>
       </section>
-
-{/* WEEK TIMELINE – ADVANCED RESPONSIVE VERSION */}
 {/* WEEK TIMELINE – FULL RESPONSIVE VERSION */}
 <section className="py-20 px-6 max-w-5xl mx-auto">
   <h2 className="text-4xl font-bold text-center mb-16">
@@ -130,7 +128,7 @@ const weeks = [
 
   <div className="relative">
 
-    {/* DESKTOP CENTER LINE */}
+    {/* DESKTOP MAIN CENTER LINE */}
     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
 
     {weeks.map((w, i) => (
@@ -139,57 +137,53 @@ const weeks = [
         {/* ------------------------------------------------------- */}
         {/* 📱 MOBILE VIEW – CENTER TIMELINE WITH DOTS              */}
         {/* ------------------------------------------------------- */}
-        <div className="md:hidden relative mb-10">
+        <div className="md:hidden relative mb-12">
 
-          {/* Center Vertical Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-yellow-400 transform -translate-x-1/2"></div>
+          {/* Strong center line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
 
-          {/* Mobile Card */}
+          {/* Dot */}
           <div
+            className="
+              absolute left-1/2 -top-2 w-4 h-4 bg-yellow-400 
+              border-2 border-white rounded-full shadow-md
+              transform -translate-x-1/2
+            "
+          ></div>
+
+          {/* Card */}
+          <div
+            className="bg-white p-5 rounded-xl shadow-md border border-gray-200 w-[90%] mx-auto mt-6"
             data-aos="fade-up"
             data-aos-delay={i * 70}
-            className="relative w-full mt-6"
           >
-            {/* Dot */}
-            <div
-              className="
-                absolute left-1/2 -top-2 w-4 h-4 bg-yellow-400 
-                border-2 border-white rounded-full shadow-md
-                transform -translate-x-1/2
-              "
-            ></div>
-
-            {/* Card */}
-            <div
-              className="
-                bg-white p-5 rounded-xl shadow-md border border-gray-200
-                w-[90%] mx-auto mt-4
-              "
-            >
-              <h3 className="text-lg font-bold text-black mb-1">
-                {w.week}
-              </h3>
-              <p className="text-gray-700 text-sm leading-relaxed">
-                {w.topic}
-              </p>
-            </div>
+            <h3 className="text-lg font-bold text-black mb-1">{w.week}</h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              {w.topic}
+            </p>
           </div>
-
         </div>
 
         {/* ------------------------------------------------------- */}
-        {/* 🖥️ DESKTOP – ALTERNATING TIMELINE                       */}
+        {/* 🖥 DESKTOP VIEW – ALTERNATING WITH INNER LINE            */}
         {/* ------------------------------------------------------- */}
         <div
-          className={`hidden md:flex mb-14 w-full ${
+          className={`hidden md:flex mb-16 w-full ${
             i % 2 === 0 ? "justify-start" : "justify-end"
           }`}
           data-aos="fade-up"
           data-aos-delay={i * 70}
         >
+          
           <div className="w-[50%] px-6 relative">
 
-            {/* Dot */}
+            {/* INNER VERTICAL LINE IN EACH SIDE */}
+            <div
+              className={`absolute top-0 bottom-0 w-[2px] bg-yellow-200 
+                          ${i % 2 === 0 ? "right-0" : "left-0"}`}
+            ></div>
+
+            {/* Dot on main center */}
             <div
               className="absolute top-4 w-6 h-6 bg-yellow-400 border-4 border-white rounded-full shadow-md"
               style={{
@@ -205,27 +199,27 @@ const weeks = [
                 {w.topic}
               </p>
             </div>
+
           </div>
         </div>
 
       </div>
     ))}
 
-    {/* 🎉 FINAL ACHIEVEMENT CARD */}
+    {/* FINAL ACHIEVEMENT CARD */}
     <div className="flex justify-center mt-20" data-aos="zoom-in">
-      <div
-        className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black 
-                   p-6 rounded-2xl shadow-xl border border-yellow-600 
-                   text-center w-[90%] md:w-[70%]"
-      >
+      <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black 
+      p-6 rounded-2xl shadow-xl border border-yellow-600 text-center w-[90%] md:w-[70%]">
         <h3 className="text-2xl font-bold">🎉 Congratulations!</h3>
         <p className="text-md mt-1 font-medium">
           You have completed the 14-Week DevOps Micro Internship Journey.
         </p>
       </div>
     </div>
+
   </div>
 </section>
+
 
 
 
