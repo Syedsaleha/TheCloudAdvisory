@@ -122,39 +122,36 @@ const weeks = [
       </section>
 
 <section className="py-20 px-6 max-w-5xl mx-auto">
-  <h2 className="text-4xl font-bold text-center mb-16">
-    14-Week DevOps Roadmap
-  </h2>
+  <h2 className="text-4xl font-bold text-center mb-16">14-Week DevOps Roadmap</h2>
 
   <div className="relative">
 
     {/* DESKTOP CENTER LINE */}
     <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[3px] bg-yellow-400 transform -translate-x-1/2"></div>
 
-    {/* MOBILE CENTER LINE */}
-    <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-300 transform -translate-x-1/2"></div>
+    {/* MOBILE FULL CONNECTED LINE (goes behind all cards) */}
+    <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-[2px] bg-yellow-400 transform -translate-x-1/2"></div>
 
+    {/* DESKTOP VERSION */}
     {weeks.map((w, i) => (
       <div
         key={i}
         data-aos="fade-up"
         data-aos-delay={i * 70}
         className={`
-          mb-14 flex w-full 
-          ${i % 2 === 0 ? "justify-start" : "justify-end"} 
-          md:flex 
-          hidden md:flex
+          mb-14 hidden md:flex w-full 
+          ${i % 2 === 0 ? "justify-start" : "justify-end"}
         `}
       >
-        {/* DESKTOP CARD (left / right alternating) */}
+        {/* Desktop card wrapper */}
         <div className="w-[50%] px-6 relative">
 
-          {/* Dot only for large screen */}
+          {/* Dot */}
           <div
-            className="absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md hidden md:block"
+            className="absolute top-4 w-5 h-5 bg-yellow-400 border-4 border-white rounded-full shadow-md"
             style={{
               left: i % 2 === 0 ? "100%" : "0%",
-              transform: "translate(-50%, 0)",
+              transform: "translate(-50%, 0)"
             }}
           ></div>
 
@@ -167,20 +164,20 @@ const weeks = [
       </div>
     ))}
 
-    {/* MOBILE VERSION (simple center-line style) */}
-    <div className="md:hidden">
+    {/* MOBILE VERSION - Continuous line with centered cards */}
+    <div className="md:hidden relative">
       {weeks.map((w, i) => (
-        <div key={i} className="relative mb-12 text-center">
+        <div key={i} className="relative mb-12 flex flex-col items-center">
 
-          {/* Card (centered) */}
-          <div className="bg-white mx-auto w-[90%] p-6 rounded-2xl shadow-md border border-gray-200 relative">
+          {/* Mobile card */}
+          <div className="bg-white w-[90%] p-6 rounded-2xl shadow-md border border-gray-200 z-10">
             <h3 className="text-xl font-bold text-black">{w.week}</h3>
             <p className="text-gray-700 text-base mt-2">{w.topic}</p>
           </div>
 
-          {/* Connector line */}
+          {/* Connector line segment */}
           {i !== weeks.length - 1 && (
-            <div className="absolute left-1/2 top-full h-10 w-[2px] bg-yellow-400 transform -translate-x-1/2"></div>
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-[2px] h-12 bg-yellow-400"></div>
           )}
         </div>
       ))}
@@ -199,6 +196,7 @@ const weeks = [
 
   </div>
 </section>
+
 
 
 
