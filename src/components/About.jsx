@@ -29,11 +29,11 @@ export default function About() {
             </div>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Figuring Services is your trusted partner in cloud transformation and DevOps excellence. With over a decade of hands-on experience, we help individuals and organizations master the complexities of modern cloud infrastructure.
+             Pravin Mishra is a seasoned cloud architect, consultant, and software developer with a passion for cloud computing, DevOps, and cybersecurity. As an AWS Certified Solutions Architect Professional, AWS Authorized Instructor, and Azure Certified Solutions Architect Expert, Pravin possesses a deep understanding of cloud infrastructure design, migration, and optimization on AWS and Azure. With extensive experience in designing and implementing secure, scalable, and efficient cloud architectures, Pravin has helped numerous businesses achieve their cloud goals.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
-              Under the leadership of Pravin Mishra, a seasoned cloud architect and DevOps evangelist, we've built a reputation for delivering practical, results-driven training and consulting that translates directly into business value.
+             As a cloud expert, Pravin is dedicated to sharing his knowledge and expertise with others, helping them to succeed in the rapidly evolving cloud landscape. When not working, Pravin enjoys exploring new technologies, reading about innovation, and traveling to new destinations
             </p>
 
             <div className="grid grid-cols-3 gap-4 py-8">
